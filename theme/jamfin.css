@@ -79,9 +79,12 @@ html {
 }
 
 .headerTabs
-.emby-tab-button {
+.emby-tab-button,
+.headerRight
+.paper-icon-button-light {
     padding: .556em;
     margin: 0 .29em;
+    border-radius: var(--theme-roundness);
 }
 
 .headerTabs,
