@@ -54,6 +54,12 @@ html {
 
 .skinHeader {
     background-color: transparent;
+}
+
+.layout-desktop
+.headerLeft,
+.layout-desktop
+.headerRight {
     margin-top: 1rem;
 }
 
