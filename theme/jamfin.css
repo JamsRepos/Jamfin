@@ -62,8 +62,9 @@ html {
 
 .headerTabs,
 .headerRight,
-.paper-icon-button-light:not(.headerLeft .paper-icon-button-light, .headerRight, .headerRight .paper-icon-button-light),
-.dialog {
+.dialog,
+.raised,
+.paper-icon-button-light:not(.headerLeft .paper-icon-button-light, .headerRight, .headerRight .paper-icon-button-light) {
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
@@ -177,7 +178,8 @@ html {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:hover:not(:disabled) {
+    .paper-icon-button-light:hover:not(:disabled),
+    .raised:hover {
         border-radius: var(--theme-roundness) !important;
         transform: unset;
         --webkit-transform: unset;
