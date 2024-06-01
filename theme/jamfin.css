@@ -17,6 +17,11 @@
     --theme-blur: 16px;
 }
 
+/* Remove the Default Focus Outline */
+*:focus-visible {
+    outline: none;
+}
+
 /* Change Background Colours */
 .backgroundContainer,
 .mainDrawer,
