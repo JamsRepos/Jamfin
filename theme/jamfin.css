@@ -63,6 +63,11 @@ html {
     margin-top: 1rem;
 }
 
+.layout-mobile
+.headerRight {
+    margin: 0 .29em;
+}
+
 .skinHeader.semiTransparent {
     background-color: unset;
 }
@@ -71,7 +76,7 @@ html {
 .headerRight,
 .dialog,
 .raised,
-.paper-icon-button-light:not(.headerLeft .paper-icon-button-light, .headerRight, .headerRight .paper-icon-button-light) {
+.paper-icon-button-light:not(.layout-desktop .headerLeft .paper-icon-button-light, .headerRight, .headerRight .paper-icon-button-light) {
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
