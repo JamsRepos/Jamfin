@@ -8,9 +8,10 @@
 :root {
     /* Colours */
     --theme-background-colour: #101010;
-    --theme-sidebar-background-colour: #151515;
-    --theme-menu-background-colour: #23232380;
+    --theme-sidebar-background-colour: #222222;
+    --theme-menu-background-colour: #3a3a3a80;
     --theme-menu-shadow-colour: #fff3;
+    --theme--hover-text-colour: #dbdbdb;
 
     /* General Appearance */
     --theme-roundness: .75rem;
@@ -195,7 +196,7 @@ html {
         border-radius: var(--theme-roundness) !important;
         transform: unset;
         -webkit-transform: unset;
-        color: white;
+        color: var(--theme--hover-text-colour);
         background-color: var(--theme-menu-shadow-colour);
     }
 }
