@@ -1,0 +1,14 @@
+/*
+    This module will change the Jellyfin logo to a custom one.
+    This allows you to white-label your Jellyfin instance slightly.
+    This can be used as a standalone module.
+*/
+
+:root {
+    --logo-url: url('https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-dark-dev.svg');
+}
+
+.pageTitleWithDefaultLogo,
+.spashLogo {
+    background-image: var(--logo-url);
+}

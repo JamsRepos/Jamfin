@@ -1,0 +1,12 @@
+/*
+    This module will change "My Media (small)" to be centered on the homepage.
+    This is useful to make the homepage look more balanced.
+    This can be used as a standalone module.
+*/
+
+#indexPage
+.section0
+.itemsContainer.padded-left.padded-right {
+    justify-content: center;
+    padding-top: 15px;
+}

@@ -1,0 +1,17 @@
+/*
+    This module change the color of the count indicators.
+    This is a simple and effective way to make your Jellyfin instance look more modern.
+    This can be used as a standalone module.
+*/
+
+.playedIndicator {
+    background: linear-gradient(to bottom right, rgba(74, 150, 76, 0.5), rgba(32, 139, 35, 0.5)) !important;
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator,
+.playedIndicator {
+    background: linear-gradient(to bottom right, rgba(170, 92, 195, 0.5), rgba(0, 164, 220, 0.5));
+    backdrop-filter: blur(50px);
+}

@@ -1,0 +1,11 @@
+/*
+    This module will hide the "My Media" section from the Jellyfin homepage.
+    This is useful if you want an even more minimalistic homepage.
+    This can be used as a standalone module.
+*/
+
+#indexPage
+.section0
+.sectionTitle {
+    display: none;
+}
