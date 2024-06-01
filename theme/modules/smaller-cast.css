@@ -65,11 +65,13 @@
     margin: auto;
 }
 
+#castContent
 .cardBox:not(.visualCardBox)
 .cardPadder {
     background-color: unset;
 }
 
+#castContent
 .cardBox:not(.visualCardBox)
 .cardPadder,
 .cardContent-shadow {
