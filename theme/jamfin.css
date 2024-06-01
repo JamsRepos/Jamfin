@@ -250,6 +250,6 @@ html {
         transform: unset;
         -webkit-transform: unset;
         color: var(--theme--hover-text-colour);
-        background-color: var(--theme-menu-shadow-colour);
+        background-color: var(--theme-menu-shadow-colour) !important;
     }
 }
