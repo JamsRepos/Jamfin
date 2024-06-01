@@ -87,6 +87,10 @@ html {
         align-self: center;
         margin-top: -58px;
     }
+
+    .layout-desktop .headerRight {
+        margin-right: .8em;
+    }
 }
 
 /* Main Drawer */
