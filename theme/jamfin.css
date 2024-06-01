@@ -39,7 +39,7 @@ html {
 
 .skinHeader {
     background-color: transparent;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .skinHeader.semiTransparent {
@@ -70,6 +70,14 @@ html {
 .layout-desktop
 .headerTabs {
     margin-left: 250px;
+}
+
+@media (max-width: 1599px) {
+    .layout-desktop .sectionTabs {
+        width: auto;
+        align-self: center;
+        margin-top: -58px;
+    }
 }
 
 /* Main Drawer */
