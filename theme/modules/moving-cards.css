@@ -11,5 +11,4 @@
 .dialog:hover,
 .itemSelectionPanel:hover {
     transform: translateY(-2.5px);
-    transition: 0.2s;
 }
