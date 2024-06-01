@@ -72,13 +72,21 @@ html {
     -webkit-backdrop-filter: blur(var(--theme-blur)) !important;
 }
 
-.headerTabs,
-.emby-tab-button {
-    padding: 0 10px;
+.headerTabs
+.emby-tabs-slider {
+    display: flex;
+    align-items: center;
 }
 
-.headerRight,
+.headerTabs
 .emby-tab-button {
+    padding: .556em;
+    margin: 0 .29em;
+}
+
+.headerTabs,
+.headerRight,
+.emby-tabs-slider {
     height: 50px;
 }
 
@@ -179,10 +187,11 @@ html {
 
 @media (hover: hover) and (pointer: fine) {
     .paper-icon-button-light:hover:not(:disabled),
-    .raised:hover {
+    .raised:hover,
+    .emby-tab-button:hover {
         border-radius: var(--theme-roundness) !important;
         transform: unset;
-        --webkit-transform: unset;
+        -webkit-transform: unset;
         color: white;
         background-color: var(--theme-menu-shadow-colour);
     }
