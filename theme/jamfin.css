@@ -1,0 +1,160 @@
+/*
+    Jamfin - Another Jellyfin Theme aimed to please the masses.
+    Please note that this theme is still in development and may not be fully functional.
+    This theme is based on the Jellyfin default theme.
+    This theme is licensed under the MIT License.
+*/
+
+:root {
+    /* Colours */
+    --theme-background-colour: #101010;
+    --theme-sidebar-background-colour: #151515;
+    --theme-menu-background-colour: #23232380;
+    --theme-menu-shadow-colour: #fff3;
+
+    /* General Appearance */
+    --theme-roundness: .75rem;
+    --theme-blur: 16px;
+}
+
+/* Change Background Colours */
+.backgroundContainer,
+.mainDrawer,
+.drawer-open,
+.nowPlayingPlaylist,
+.nowPlayingContextMenu,
+html {
+    background-color: var(--theme-background-colour);
+}
+
+/* Re-design the Header */
+
+[dir="ltr"] .pageTitle {
+    margin-left: 1.2em;
+}
+
+.pageTitleWithLogo {
+    height: 40px;
+}
+
+.skinHeader {
+    background-color: transparent;
+    margin-top: 1.5rem;
+}
+
+.skinHeader.semiTransparent {
+    background-color: unset;
+}
+
+.headerTabs,
+.headerRight,
+.paper-icon-button-light:not(.headerLeft .paper-icon-button-light, .headerRight, .headerRight .paper-icon-button-light),
+.dialog {
+    border-radius: var(--theme-roundness);
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    background-color: var(--theme-menu-background-colour);
+    backdrop-filter: blur(var(--theme-blur));
+    -webkit-backdrop-filter: blur(var(--theme-blur)) !important;
+}
+
+.headerTabs,
+.emby-tab-button {
+    padding: 0 10px;
+}
+
+.headerRight,
+.emby-tab-button {
+    height: 50px;
+}
+
+.layout-desktop
+.headerTabs {
+    margin-left: 250px;
+}
+
+/* Main Drawer */
+
+.layout-desktop,
+.touch-menu-la.transition {
+    transition: none;
+}
+
+.layout-desktop
+.mainDrawer {
+    left: 0 !important;
+    top: 0;
+    width: 250px !important;
+    background-color: var(--theme-sidebar-background-colour);
+    z-index: 100;
+}
+
+.layout-desktop
+.mainDrawer-scrollContainer {
+    margin-top: 100px;
+}
+
+.layout-desktop
+.mainDrawerButton,
+.layout-desktop
+.headerHomeButton {
+    display: none;
+}
+
+.layout-desktop
+.libraryPage:not(#editItemMetadataPage) {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
+.navMenuOption,
+.navMenuOption-selected,
+.navMenuOption:hover {
+    border-radius: var(--theme-roundness) !important;
+    width: 80%;
+    margin: auto !important;
+}
+
+.navMenuOption:hover {
+    background-color: var(--theme-menu-shadow-colour);
+}
+
+.navMenuOption-selected {
+    background: var(--theme-menu-shadow-colour) !important;
+}
+
+/* Main Cards */
+
+.cardContent,
+.cardPadder,
+.blurhash-canvas,
+.dialog,
+.itemSelectionPanel {
+    border-radius: var(--theme-roundness) !important;
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour) !important;
+    transition: 0.2s;
+}
+
+.cardOverlayContainer {
+    border-radius: var(--theme-roundness) !important;
+    background: unset;
+    box-shadow: inset 0 2px var(--theme-menu-shadow-colour) !important;
+}
+
+.cardOverlayContainer > .cardOverlayButton-br .cardOverlayButton {
+    padding: unset;
+    margin: 2px;
+}
+
+.cardOverlayContainer > .cardOverlayFab-primary {
+    background-color: var(--theme-menu-background-colour);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:hover:not(:disabled) {
+        border-radius: var(--theme-roundness) !important;
+        transform: unset;
+        --webkit-transform: unset;
+        color: white;
+        background-color: var(--theme-menu-shadow-colour);
+    }
+}

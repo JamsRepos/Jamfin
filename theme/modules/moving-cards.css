@@ -1,0 +1,15 @@
+/*
+    This module will make your Jellyfin cards lift up slightly when hovered over.
+    This is a simple and effective way to make your Jellyfin instance look more modern.
+    This must be used in conjunction with the main theme.
+*/
+
+.cardScalable:hover,
+.cardContent:hover,
+.cardPadder:hover,
+.blurhash-canvas:hover,
+.dialog:hover,
+.itemSelectionPanel:hover {
+    transform: translateY(-2.5px);
+    transition: 0.2s;
+}
