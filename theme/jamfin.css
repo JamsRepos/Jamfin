@@ -33,6 +33,15 @@ html {
     margin-left: 1.2em;
 }
 
+[dir="ltr"] .sidebarHeader {
+    padding-left: 2em;
+    font-weight: bold;
+}
+
+[dir="ltr"] .navMenuOption {
+    padding: .9em 1.2em !important;
+}
+
 .pageTitleWithLogo {
     height: 40px;
 }
