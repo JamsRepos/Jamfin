@@ -173,6 +173,7 @@ html {
 
 .cardOverlayContainer > .cardOverlayFab-primary {
     background-color: var(--theme-menu-background-colour);
+    font-size: 110%;
 }
 
 @media (hover: hover) and (pointer: fine) {
