@@ -227,10 +227,12 @@ html {
 /* Main Cards */
 
 .layout-desktop
-div:not(.sectionTitleContainer-cards) >
-.sectionTitle-cards {
+.section0
+.emby-scrollbuttons,
+.layout-desktop
+.section1
+.emby-scrollbuttons {
     padding-top: unset;
-    height: 56px;
 }
 
 .cardContent,
