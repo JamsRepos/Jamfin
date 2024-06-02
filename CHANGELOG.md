@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/JamsRepos/Jamfin/compare/v1.0.5...v1.0.6) (2024-06-02)
+
+### Bug Fixes
+
+* :bug: Properly escape the command ([abe9281](https://github.com/JamsRepos/Jamfin/commit/abe9281739d4a559c32d70f1a371a595f7ded436))
+
 ## [1.0.5](https://github.com/JamsRepos/Jamfin/compare/v1.0.4...v1.0.5) (2024-06-02)
 
 ### Build System
