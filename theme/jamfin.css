@@ -11,7 +11,7 @@
     --theme-sidebar-background-colour: #222222;
     --theme-menu-background-colour: #3a3a3a80;
     --theme-menu-shadow-colour: #fff3;
-    --theme-primary-colour: #696969;
+    --theme-base-colour: #696969;
     --theme--hover-colour: #dbdbdb;
     --theme-restart-colour: #da87287e;
     --theme-shutdown-colour: #c21c1c9d;
@@ -108,7 +108,8 @@ html {
 
 .headerTabs .emby-tab-button,
 .headerRight .paper-icon-button-light,
-.detailButton {
+.detailButton,
+.sessionCardButton {
     padding: .556em !important;
     margin: 0 .29em !important;
     border-radius: var(--theme-roundness);
@@ -207,8 +208,8 @@ html {
     padding-top: unset;
 }
 
-.cardContent,
-.cardPadder,
+.cardContent:not(.dashboardSection .cardContent),
+.cardPadder:not(.dashboardSection .cardPadder),
 .blurhash-canvas,
 .dialog,
 .itemSelectionPanel {
@@ -238,7 +239,6 @@ html {
 }
 
 .cardOverlayContainer > .cardOverlayFab-primary,
-.itemProgressBar,
 .mdl-slider-background-upper {
     background-color: var(--theme-menu-background-colour);
     font-size: 110%;
@@ -349,7 +349,13 @@ html {
 
 .layout-desktop .backdropImage {
     filter: blur(5px);
-    -filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.darkenContent {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: linear-gradient(180deg, transparent, var(--theme-background-colour));
 }
 
 .noBackdropTransparency .detailPageSecondaryContainer {
@@ -392,6 +398,15 @@ html {
     border-radius: var(--theme-roundness);
 }
 
+.sessionCardButtons {
+    margin: .29em 0;
+}
+
+.dashboardSection .cardContent {
+    border-top-left-radius: var(--theme-roundness);
+    border-top-right-radius: var(--theme-roundness);
+}
+
 /* Base Colours */
 
 .selectLabelFocused,
@@ -405,14 +420,16 @@ html {
 .mdl-slider::-moz-range-thumb,
 .mdl-slider-background-lower,
 .sliderMarker.watched,
+.itemProgressBarForeground,
+.playbackProgress > div,
 .iconOsdProgressInner {
     background-color: var(--theme--hover-colour);
 }
 
 .emby-checkbox:checked + span + .checkboxOutline,
-.itemProgressBarForeground,
-.listItemIcon:not(.listItemIcon-transparent) {
-    background-color: var(--theme-primary-colour);
+.itemProgressBar,
+.listItemIcon:not(.listItemIcon-transparent):not(.notification_important) {
+    background-color: var(--theme-base-colour) !important;
 }
 
 .emby-checkbox + span + .checkboxOutline,
@@ -422,5 +439,5 @@ html {
 .mdl-spinner__layer-2,
 .mdl-spinner__layer-3,
 .mdl-spinner__layer-4 {
-    border-color: var(--theme-primary-colour) !important;
+    border-color: var(--theme-base-colour) !important;
 }

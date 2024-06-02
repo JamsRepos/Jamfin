@@ -4,8 +4,6 @@
     This can be used as a standalone module.
 */
 
-#indexPage
-.section0
-.sectionTitle {
+#indexPage .section0 .sectionTitle {
     display: none;
 }

@@ -4,9 +4,7 @@
     This can be used as a standalone module.
 */
 
-#indexPage
-.section0
-.itemsContainer.padded-left.padded-right {
+#indexPage .section0 .itemsContainer.padded-left.padded-right {
     justify-content: center;
     padding-top: 15px;
 }
