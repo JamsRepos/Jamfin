@@ -226,6 +226,13 @@ html {
 
 /* Main Cards */
 
+.layout-desktop
+div:not(.sectionTitleContainer-cards) >
+.sectionTitle-cards {
+    padding-top: unset;
+    height: 56px;
+}
+
 .cardContent,
 .cardPadder,
 .blurhash-canvas,
