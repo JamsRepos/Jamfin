@@ -1,3 +1,9 @@
+## [1.0.10](https://github.com/JamsRepos/Jamfin/compare/v1.0.9...v1.0.10) (2024-06-02)
+
+### Code Refactoring
+
+* :rocket: Ensure files are added to git prior to commit ([b67141d](https://github.com/JamsRepos/Jamfin/commit/b67141d69cb990531d2b6884ff8bb21f6545c5b0))
+
 ## [1.0.9](https://github.com/JamsRepos/Jamfin/compare/v1.0.8...v1.0.9) (2024-06-02)
 
 ### Bug Fixes
