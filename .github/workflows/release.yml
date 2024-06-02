@@ -30,16 +30,18 @@ jobs:
         id: new_version
         run: echo "RELEASE_VERSION=${{ steps.release.outputs.new_release_version }}" >> $GITHUB_ENV
 
-      - name: Replace CDN links in README.md
+      - name: Replace CDN links to the latest update
         run: |
           NEW_VERSION=${{ env.RELEASE_VERSION }}
-          find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@.*|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@${NEW_VERSION}|g" {} +
+          find . -name "README.md" -o -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@.*|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@${NEW_VERSION}|g" {} +
 
-      - name: Commit and push updated README.md
+      - name: Commit and push updated files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update CDN links to version ${{ env.RELEASE_VERSION }}"
           branch: main
-          file_pattern: README.md
+          file_pattern: |
+            README.md
+            theme/complete.css
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

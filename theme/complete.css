@@ -1,0 +1,13 @@
+/*
+    The complete pack of the Jamfin theme. This file includes all the modules and the main theme.
+    If you wish to use only some of the modules, you can import them individually.
+    You can grab the base theme by changing jamfin.css to base.css in the first line.
+*/
+
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/jamfin.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/modules/central-libraries-small.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/modules/change-logo.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/modules/count-indicators.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/modules/forgot-password.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/modules/hide-my-media.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/modules/smaller-cast.css");
