@@ -103,6 +103,10 @@ html {
     -webkit-backdrop-filter: blur(var(--theme-blur)) !important;
 }
 
+.dialogBackdrop {
+    background-color: #111;
+}
+
 .headerTabs
 .emby-tabs-slider {
     display: flex;
