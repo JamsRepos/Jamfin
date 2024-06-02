@@ -24,16 +24,4 @@ jobs:
         id: release
         run: npm run semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Commit and push updated files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update CDN links to version $(cat VERSION.txt)"
-          branch: main
-          file_pattern: |
-            README.md
-            theme/complete.css
-            VERSION.txt
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}

@@ -16,7 +16,13 @@ const config = {
         [
             "@semantic-release/exec",
             {
-                prepareCmd: 'echo "Branch: ${branch}"',
+                prepareCmd: 'echo "${nextRelease.version}" > VERSION.txt',
+                successCmd: `
+                    echo "Updating CDN links to version \${nextRelease.version}" &&
+                    for file in $(find . -name "README.md" -o -name "complete.css"); do
+                        sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" "$file"
+                    done
+                `
             },
         ],
         [
@@ -62,21 +68,15 @@ const config = {
             },
         ],
         [
-            "@semantic-release/exec",
-            {
-                prepareCmd: 'echo "${nextRelease.version}" > VERSION.txt',
-                successCmd: `
-                    echo "Updating CDN links to version \${nextRelease.version}" &&
-                    find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" {} \\; &&
-                    find . -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" {} \\;
-                `
-            },
-        ],
-        [
             "@semantic-release/git",
             {
                 assets: ["CHANGELOG.md", "VERSION.txt", "README.md", "theme/complete.css"],
                 message: "chore: 🧹 \${nextRelease.version}\n\n\${nextRelease.notes}",
+                gitPushArgs: [
+                    "--follow-tags",
+                    "--set-upstream origin main"
+                ],
+                gitCredentials: `https://${process.env.GH_TOKEN}@github.com/JamsRepos/Jamfin.git`
             },
         ],
     ],
