@@ -98,7 +98,8 @@ html {
 ),
 .osdHeader
 .headerLeft
-.paper-icon-button-light {
+.paper-icon-button-light,
+.detailButton {
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
@@ -119,9 +120,10 @@ html {
 .headerTabs
 .emby-tab-button,
 .headerRight
-.paper-icon-button-light {
-    padding: .556em;
-    margin: 0 .29em;
+.paper-icon-button-light,
+.detailButton {
+    padding: .556em !important;
+    margin: 0 .29em !important;
     border-radius: var(--theme-roundness);
 }
 
@@ -287,7 +289,8 @@ html {
 @media (hover: hover) and (pointer: fine) {
     .paper-icon-button-light:hover:not(:disabled, .btnDelete),
     .raised:hover,
-    .emby-tab-button:hover {
+    .emby-tab-button:hover,
+    .detailButton:hover {
         border-radius: var(--theme-roundness) !important;
         transform: unset;
         -webkit-transform: unset;
@@ -331,7 +334,94 @@ h2,
     padding: 10px;
 }
 
+.emby-select[disabled] {
+    box-shadow: unset;
+}
 
+.trackSelections .selectContainer .detailTrackSelect {
+    padding: 0 10px;
+}
+
+/* Content Details */
+
+.layout-desktop
+.detailImageContainer
+.card {
+    width: 250px;
+    max-width: unset;
+    top: 8.5em;
+    padding-top: 5px;
+}
+
+.layout-desktop
+.detailPagePrimaryContent {
+    padding-top: 75px;
+    padding-left: 300px;
+    min-height: 325px;
+}
+
+.layout-desktop
+.detailPagePrimaryContainer,
+.layout-desktop
+.detailPageContent {
+    padding-left: 3.3% !important;
+}
+
+.detailRibbon {
+    background: unset;
+}
+
+.layout-desktop
+.infoWrapper {
+    padding-top: 226px;
+    padding-left: 300px;
+}
+
+.layout-mobile
+.itemBackdrop {
+    margin-top: unset;
+}
+
+.layout-mobile
+.detailImageContainer
+.card {
+    filter: unset;
+    -webkit-filter: unset;
+}
+
+.layout-desktop
+.detailLogo {
+    left: 3%;
+    right: unset;
+    z-index: 1;
+}
+
+.layout-desktop
+.backgroundContainer.withBackdrop {
+    background-color: unset;
+}
+
+.layout-desktop
+.backdropImage {
+    filter: blur(5px);
+    -filter: blur(5px);
+}
+
+.noBackdropTransparency
+.detailPageSecondaryContainer {
+    position: relative;
+}
+
+.noBackdropTransparency
+.detailPageSecondaryContainer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
+}
 
 /* Admin Settings */
 
