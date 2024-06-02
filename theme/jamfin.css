@@ -295,15 +295,8 @@ html {
 
 /* User Settings */
 
-#myPreferencesMenuPage
-.readOnlyContent {
-    background-color: var(--theme-menu-background-colour);
-    border-radius: var(--theme-roundness);
-    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
-    padding: 1em;
-}
-
 .readOnlyContent
+h2,
 .sectionTitle {
     font-weight: bold;
 }
@@ -318,4 +311,19 @@ html {
 
 .listItem:hover {
     border-radius: var(--theme-roundness);
+}
+
+.collapseContent,
+.formDialogFooter:not(.formDialogFooter-clear),
+.formDialogHeader:not(.formDialogHeader-clear),
+.paperList,
+.visualCardBox,
+.emby-select-withcolor,
+.emby-input,
+.emby-textarea {
+    background-color: var(--theme-menu-background-colour);
+    border-radius: var(--theme-roundness);
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    border: unset;
+    padding: 10px;
 }
