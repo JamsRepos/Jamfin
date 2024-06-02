@@ -1,3 +1,9 @@
+## [1.0.9](https://github.com/JamsRepos/Jamfin/compare/v1.0.8...v1.0.9) (2024-06-02)
+
+### Bug Fixes
+
+* :bug: Corrected typo ([a5b242b](https://github.com/JamsRepos/Jamfin/commit/a5b242bc96841a2064e6584cacbdfa8f6b0317fa))
+
 ## [1.0.8](https://github.com/JamsRepos/Jamfin/compare/v1.0.7...v1.0.8) (2024-06-02)
 
 ### Commit Reverts
