@@ -11,7 +11,8 @@
     --theme-sidebar-background-colour: #222222;
     --theme-menu-background-colour: #3a3a3a80;
     --theme-menu-shadow-colour: #fff3;
-    --theme--hover-text-colour: #dbdbdb;
+    --theme-primary-colour: #696969;
+    --theme--hover-colour: #dbdbdb;
     --theme-restart-colour: #da87287e;
     --theme-shutdown-colour: #c21c1c9d;
 
@@ -37,19 +38,16 @@ html {
 
 /* Re-design the Header */
 
-[dir="ltr"]
-.pageTitle {
+[dir="ltr"] .pageTitle {
     margin-left: 1.2em;
 }
 
-[dir="ltr"]
-.sidebarHeader {
+[dir="ltr"] .sidebarHeader {
     padding-left: 2em;
     font-weight: bold;
 }
 
-[dir="ltr"]
-.navMenuOption {
+[dir="ltr"] .navMenuOption {
     padding: .9em 1.2em !important;
 }
 
@@ -61,15 +59,12 @@ html {
     background-color: transparent;
 }
 
-.layout-desktop
-.headerLeft,
-.layout-desktop
-.headerRight {
+.layout-desktop .headerLeft,
+.layout-desktop .headerRight {
     margin-top: 1rem;
 }
 
-.layout-mobile
-.headerRight {
+.layout-mobile .headerRight {
     margin: 0 .29em;
 }
 
@@ -89,16 +84,11 @@ html {
 .raised,
 .fab,
 .paper-icon-button-light:not(
-    .layout-desktop
-    .headerLeft
-    .paper-icon-button-light,
+    .layout-desktop .headerLeft .paper-icon-button-light,
     .headerRight,
-    .headerRight
-    .paper-icon-button-light
+    .headerRight .paper-icon-button-light
 ),
-.osdHeader
-.headerLeft
-.paper-icon-button-light,
+.osdHeader .headerLeft .paper-icon-button-light,
 .detailButton {
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
@@ -111,65 +101,50 @@ html {
     background-color: #111;
 }
 
-.headerTabs
-.emby-tabs-slider {
+.headerTabs .emby-tabs-slider {
     display: flex;
     align-items: center;
 }
 
-.headerTabs
-.emby-tab-button,
-.headerRight
-.paper-icon-button-light,
+.headerTabs .emby-tab-button,
+.headerRight .paper-icon-button-light,
 .detailButton {
     padding: .556em !important;
     margin: 0 .29em !important;
     border-radius: var(--theme-roundness);
 }
 
-.layout-desktop
-.headerTabs,
-.layout-desktop
-.headerRight,
-.layout-desktop
-.emby-tabs-slider,
-.layout-desktop
-.raised {
+.layout-desktop .headerTabs,
+.layout-desktop .headerRight,
+.layout-desktop .emby-tabs-slider,
+.layout-desktop .raised {
     height: 50px;
 }
 
-.layout-mobile
-.headerTabs,
-.layout-mobile
-.headerRight,
-.layout-mobile
-.emby-tabs-slider,
-.layout-mobile
-.raised {
+.layout-mobile .headerTabs,
+.layout-mobile .headerRight,
+.layout-mobile .emby-tabs-slider,
+.layout-mobile .raised {
     height: 40px;
 }
 
-.layout-desktop
-.headerTabs {
+.layout-desktop .headerTabs {
     margin-left: 250px;
 }
 
-.layout-mobile
-.headerTabs {
+.layout-mobile .headerTabs {
     margin: 10px auto;
     width: auto;
 }
 
 @media (max-width: 1599px) {
-    .layout-desktop
-    .sectionTabs {
+    .layout-desktop .sectionTabs {
         width: auto;
         align-self: center;
         margin-top: -58px;
     }
 
-    .layout-desktop
-    .headerRight {
+    .layout-desktop .headerRight {
         margin-right: .8em;
     }
 }
@@ -181,8 +156,7 @@ html {
     transition: none;
 }
 
-.layout-desktop
-.mainDrawer {
+.layout-desktop .mainDrawer {
     left: 0 !important;
     top: 0;
     width: 250px !important;
@@ -190,29 +164,21 @@ html {
     z-index: 100;
 }
 
-.layout-desktop
-.hide-scroll
-.mainDrawer,
-.layout-desktop
-.hideMainDrawer
-.mainDrawer {
+.layout-desktop .hide-scroll .mainDrawer,
+.layout-desktop .hideMainDrawer .mainDrawer {
     left: -250px !important;
 }
 
-.layout-desktop
-.mainDrawer-scrollContainer {
+.layout-desktop .mainDrawer-scrollContainer {
     margin-top: 100px;
 }
 
-.layout-desktop
-.mainDrawerButton,
-.layout-desktop
-.headerHomeButton {
+.layout-desktop .mainDrawerButton,
+.layout-desktop .headerHomeButton {
     display: none;
 }
 
-.layout-desktop
-.libraryPage:not(#editItemMetadataPage) {
+.layout-desktop .libraryPage:not(#editItemMetadataPage) {
     margin-left: 250px;
     width: calc(100% - 250px);
 }
@@ -236,12 +202,8 @@ html {
 
 /* Main Cards */
 
-.layout-desktop
-.section0
-.emby-scrollbuttons,
-.layout-desktop
-.section1
-.emby-scrollbuttons {
+.layout-desktop .section0 .emby-scrollbuttons,
+.layout-desktop .section1 .emby-scrollbuttons {
     padding-top: unset;
 }
 
@@ -261,27 +223,21 @@ html {
     box-shadow: inset 0 2px var(--theme-menu-shadow-colour) !important;
 }
 
-.layout-mobile
-.cardOverlayButton {
+.layout-mobile .cardOverlayButton {
     padding: unset;
     margin: 5px;
 }
 
-.layout-mobile
-.cardOverlayButtonIcon {
+.layout-mobile .cardOverlayButtonIcon {
     background: unset !important;
 }
 
-.layout-desktop
-.cardOverlayContainer >
-.cardOverlayButton-br
-.cardOverlayButton {
+.layout-desktop .cardOverlayContainer > .cardOverlayButton-br .cardOverlayButton {
     padding: unset;
     margin: 5px;
 }
 
-.cardOverlayContainer >
-.cardOverlayFab-primary {
+.cardOverlayContainer > .cardOverlayFab-primary {
     background-color: var(--theme-menu-background-colour);
     font-size: 110%;
 }
@@ -294,15 +250,14 @@ html {
         border-radius: var(--theme-roundness) !important;
         transform: unset;
         -webkit-transform: unset;
-        color: var(--theme--hover-text-colour);
+        color: var(--theme--hover-colour);
         background-color: var(--theme-menu-shadow-colour) !important;
     }
 }
 
 /* User Settings */
 
-.readOnlyContent
-h2,
+.readOnlyContent h2,
 .sectionTitle {
     font-weight: bold;
 }
@@ -344,26 +299,21 @@ h2,
 
 /* Content Details */
 
-.layout-desktop
-.detailImageContainer
-.card {
+.layout-desktop .detailImageContainer .card {
     width: 250px;
     max-width: unset;
     top: 8.5em;
     padding-top: 5px;
 }
 
-.layout-desktop
-.detailPagePrimaryContent {
+.layout-desktop .detailPagePrimaryContent {
     padding-top: 75px;
     padding-left: 300px;
     min-height: 325px;
 }
 
-.layout-desktop
-.detailPagePrimaryContainer,
-.layout-desktop
-.detailPageContent {
+.layout-desktop .detailPagePrimaryContainer,
+.layout-desktop .detailPageContent {
     padding-left: 3.3% !important;
 }
 
@@ -371,49 +321,40 @@ h2,
     background: unset;
 }
 
-.layout-desktop
-.infoWrapper {
+.layout-desktop .infoWrapper {
     padding-top: 226px;
     padding-left: 300px;
 }
 
-.layout-mobile
-.itemBackdrop {
+.layout-mobile .itemBackdrop {
     margin-top: unset;
 }
 
-.layout-mobile
-.detailImageContainer
-.card {
+.layout-mobile .detailImageContainer .card {
     filter: unset;
     -webkit-filter: unset;
 }
 
-.layout-desktop
-.detailLogo {
+.layout-desktop .detailLogo {
     left: 3%;
     right: unset;
     z-index: 1;
 }
 
-.layout-desktop
-.backgroundContainer.withBackdrop {
+.layout-desktop .backgroundContainer.withBackdrop {
     background-color: unset;
 }
 
-.layout-desktop
-.backdropImage {
+.layout-desktop .backdropImage {
     filter: blur(5px);
     -filter: blur(5px);
 }
 
-.noBackdropTransparency
-.detailPageSecondaryContainer {
+.noBackdropTransparency .detailPageSecondaryContainer {
     position: relative;
 }
 
-.noBackdropTransparency
-.detailPageSecondaryContainer::before {
+.noBackdropTransparency .detailPageSecondaryContainer::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -441,10 +382,40 @@ h2,
 
 #btnShutdown:hover,
 .btnDelete:hover {
-    color: var(--theme--hover-text-colour) !important;
+    color: var(--theme--hover-colour) !important;
     background-color: var(--theme-shutdown-colour) !important;
 }
 
 .listItemIcon:not(.listItemIcon-transparent) {
     border-radius: var(--theme-roundness);
+}
+
+/* Base Colours */
+
+.selectLabelFocused,
+.textareaLabelFocused,
+.inputLabelFocused,
+.metadataSidebarIcon {
+    color: var(--theme--hover-colour);
+}
+
+.emby-checkbox:checked + span + .checkboxOutline,
+.itemProgressBarForeground,
+.listItemIcon:not(.listItemIcon-transparent) {
+    background-color: var(--theme-primary-colour);
+}
+
+.itemProgressBar {
+    height: 7.5px;
+    background-color: var(--theme-menu-background-colour);
+}
+
+.emby-checkbox + span + .checkboxOutline,
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+    border-color: var(--theme-primary-colour) !important;
 }
