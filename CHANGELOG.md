@@ -1,3 +1,24 @@
+## [1.0.1](https://github.com/JamsRepos/Jamfin/compare/v1.0.0...v1.0.1) (2024-06-02)
+
+### Bug Fixes
+
+* :bug: Fix old conflicts ([73cdfcd](https://github.com/JamsRepos/Jamfin/commit/73cdfcd905c552d848fc8113eb8315a9fd7ef429))
+* :bug: Included the semantic exec ([9e668bd](https://github.com/JamsRepos/Jamfin/commit/9e668bd3008059963876ab6fd7494996b5777ece))
+
+### Continuous Integration
+
+* :rocket: Changed to use a version file ([9c8bf7a](https://github.com/JamsRepos/Jamfin/commit/9c8bf7aa95220af1ae35145bd5149ee478fdec36))
+* :rocket: Changed workflow to use the package.json ([4deb14c](https://github.com/JamsRepos/Jamfin/commit/4deb14c55b9128837926e90e2e7cc884d6e30b20))
+
+### Chores
+
+* :arrow_up: Upgraded dependencies ([9002bb9](https://github.com/JamsRepos/Jamfin/commit/9002bb9c3cce167ab40e1f90dd1533a20aa28dd1))
+
+### Code Refactoring
+
+* :art: Changed structure to include a base and a complete pack ([42419f4](https://github.com/JamsRepos/Jamfin/commit/42419f4f0bb233dc3674d6eeae61f8a3aa0604a6))
+* :lipstick: Added more options to the semantic release ([37debd7](https://github.com/JamsRepos/Jamfin/commit/37debd78f8ce522008452f84692e036ee3cdb677))
+
 # 1.0.0 (2024-06-02)
 
 
