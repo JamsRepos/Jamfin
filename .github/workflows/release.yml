@@ -35,13 +35,11 @@ jobs:
           NEW_VERSION=${{ env.RELEASE_VERSION }}
           find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@.*|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@${NEW_VERSION}|g" {} +
 
-      - name: Commit updated README.md
+      - name: Commit and push updated README.md
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update CDN links to version ${{ env.RELEASE_VERSION }}"
+          branch: main
+          file_pattern: README.md
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
-          git add .
-          git commit -m "chore: update CDN links to version ${NEW_VERSION}"
-          git push origin main
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
