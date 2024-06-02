@@ -1,3 +1,13 @@
+## [1.0.8](https://github.com/JamsRepos/Jamfin/compare/v1.0.7...v1.0.8) (2024-06-02)
+
+### Commit Reverts
+
+* :bug: Added back GH_TOKEN ([e34cf67](https://github.com/JamsRepos/Jamfin/commit/e34cf6797038ad27fb3c8d717a935fc5d32cc4c8))
+
+### Code Refactoring
+
+* :zap: Changed to a JS replace approach ([6de82c2](https://github.com/JamsRepos/Jamfin/commit/6de82c21cfee504a9dcbcb8ae7e061ebd72858d4))
+
 ## [1.0.7](https://github.com/JamsRepos/Jamfin/compare/v1.0.6...v1.0.7) (2024-06-02)
 
 ### Build System
