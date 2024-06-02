@@ -22,7 +22,7 @@ const config = {
                 successCmd: `
                     echo "\${nextRelease.version}" > VERSION.txt &&
                     echo "Updating CDN links to version \${nextRelease.version}" &&
-                    node replace-version.js \${nextRelease.version} .
+                    node replace.version.js \${nextRelease.version} .
                 `
             },
         ],
