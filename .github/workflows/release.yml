@@ -18,7 +18,7 @@ jobs:
           node-version: 21
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Run semantic-release
         id: release
