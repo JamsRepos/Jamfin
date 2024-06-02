@@ -67,8 +67,8 @@ const config = {
                 prepareCmd: 'echo "${nextRelease.version}" > VERSION.txt',
                 successCmd: `
                     echo "Updating CDN links to version \${nextRelease.version}" &&
-                    find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" {} \; &&
-                    find . -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" {} \;
+                    find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" {} \\; &&
+                    find . -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" {} \\;
                 `
             },
         ],
