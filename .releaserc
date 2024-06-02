@@ -1,6 +1,6 @@
 {
     "branches": ["main"],
-    "repositoryUrl": "https://github.com/JamsRepos/Jamfin",
+    "repositoryUrl": "https://github.com/JamsRepos/Jamfin.git",
     "plugins": [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
