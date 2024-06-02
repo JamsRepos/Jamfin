@@ -35,7 +35,7 @@ If you just want the theme without all our modules integrated, simply copy this 
 
 #### ❓Where do I install it?
 
-Locate the `Custom CSS code` option under your General settings in the admin panel and simply paste the following line within the box.
+Locate the `Custom CSS code` option under your General settings in the admin panel and simply paste one of the lines above within the box.
 
 If you wish to just install this for yourself only, you can do so by going to your users Display settings and copy the following settings.
 

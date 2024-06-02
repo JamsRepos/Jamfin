@@ -4,7 +4,7 @@
     You can grab the base theme by changing jamfin.css to base.css in the first line.
 */
 
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.11/theme/jamfin.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.11/theme/base.css");
 @import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.11/theme/modules/central-libraries-small.css");
 @import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.11/theme/modules/change-logo.css");
 @import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.11/theme/modules/count-indicators.css");
