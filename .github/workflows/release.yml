@@ -17,12 +17,12 @@ jobs:
         with:
           node-version: 21
 
-      - name: Install semantic-release dependencies
-        run: npm install -g @semantic-release/git @semantic-release/github @semantic-release/changelog
+      - name: Install dependencies
+        run: npm install
 
       - name: Run semantic-release
         id: release
-        uses: cycjimmy/semantic-release-action@v4
+        run: npm run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
