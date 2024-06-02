@@ -16,12 +16,13 @@ const config = {
         [
             "@semantic-release/exec",
             {
-                prepareCmd: 'echo "${nextRelease.version}" > VERSION.txt',
+                prepareCmd: `
+                    echo "Branch: ${branch}"
+                `,
                 successCmd: `
+                    echo "\${nextRelease.version}" > VERSION.txt &&
                     echo "Updating CDN links to version \${nextRelease.version}" &&
-                    for file in $(find . -name "README.md" -o -name "complete.css"); do
-                        sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${nextRelease.version}|g" "$file"
-                    done
+                    node replace-version.js \${nextRelease.version} .
                 `
             },
         ],
@@ -72,11 +73,6 @@ const config = {
             {
                 assets: ["CHANGELOG.md", "VERSION.txt", "README.md", "theme/complete.css"],
                 message: "chore: 🧹 \${nextRelease.version}\n\n\${nextRelease.notes}",
-                gitPushArgs: [
-                    "--follow-tags",
-                    "--set-upstream origin main"
-                ],
-                gitCredentials: `https://${process.env.GH_TOKEN}@github.com/JamsRepos/Jamfin.git`
             },
         ],
     ],
