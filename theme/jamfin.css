@@ -95,6 +95,9 @@ html {
     background-color: var(--theme-menu-background-colour);
     backdrop-filter: blur(var(--theme-blur));
     -webkit-backdrop-filter: blur(var(--theme-blur)) !important;
+    -moz-backdrop-filter: blur(var(--theme-blur)) !important;
+    -o-backdrop-filter: blur(var(--theme-blur)) !important;
+    -ms-backdrop-filter: blur(var(--theme-blur)) !important;
 }
 
 .dialogBackdrop {
@@ -244,17 +247,19 @@ html {
     font-size: 110%;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:hover:not(:disabled, .btnDelete),
-    .raised:hover,
-    .emby-tab-button:hover,
-    .detailButton:hover {
-        border-radius: var(--theme-roundness) !important;
-        transform: unset;
-        -webkit-transform: unset;
-        color: var(--theme--hover-colour);
-        background-color: var(--theme-menu-shadow-colour) !important;
-    }
+.button-submit:focus,
+.paper-icon-button-light:hover:not(:disabled, .btnDelete),
+.raised:hover,
+.emby-tab-button:hover,
+.detailButton:hover {
+    border-radius: var(--theme-roundness) !important;
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -o-transform: unset;
+    -ms-transform: unset;
+    color: var(--theme--hover-colour);
+    background-color: var(--theme-menu-shadow-colour) !important;
 }
 
 /* User Settings */
@@ -335,6 +340,9 @@ html {
 .layout-mobile .detailImageContainer .card {
     filter: unset;
     -webkit-filter: unset;
+    -moz-filter: unset;
+    -o-filter: unset;
+    -ms-filter: unset;
 }
 
 .layout-desktop .detailLogo {
@@ -350,11 +358,21 @@ html {
 .layout-desktop .backdropImage {
     filter: blur(5px);
     -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
 }
 
 .darkenContent {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    background: -webkit-linear-gradient(180deg, transparent, var(--theme-background-colour));
+    background: -moz-linear-gradient(180deg, transparent, var(--theme-background-colour));
+    background: -o-linear-gradient(180deg, transparent, var(--theme-background-colour));
+    background: -ms-linear-gradient(180deg, transparent, var(--theme-background-colour));
     background: linear-gradient(180deg, transparent, var(--theme-background-colour));
 }
 
@@ -369,6 +387,10 @@ html {
     left: 0;
     right: 0;
     height: 50%;
+    background: -webkit-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
+    background: -moz-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
+    background: -ms-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
+    background: -o-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
     background: linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
 }
 
