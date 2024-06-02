@@ -26,22 +26,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Get new release version
-        id: new_version
-        run: echo "RELEASE_VERSION=${{ steps.release.outputs.new_release_version }}" >> $GITHUB_ENV
+      - name: Create version file
+        run: echo "${{ steps.release.outputs.new_release_version }}" > version.txt
 
       - name: Replace CDN links to the latest update
         run: |
-          NEW_VERSION=${{ env.RELEASE_VERSION }}
+          NEW_VERSION=$(cat version.txt)
           find . -name "README.md" -o -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@.*|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@${NEW_VERSION}|g" {} +
 
       - name: Commit and push updated files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update CDN links to version ${{ env.RELEASE_VERSION }}"
+          commit_message: "chore: update CDN links to version $(cat version.txt)"
           branch: main
           file_pattern: |
             README.md
             theme/complete.css
+            version.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
