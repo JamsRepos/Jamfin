@@ -1,5 +1,5 @@
 {
-    "branches": ["main"],
+    "branches": ["main", "workflow"],
     "repositoryUrl": "https://github.com/JamsRepos/Jamfin.git",
     "plugins": [
         "@semantic-release/commit-analyzer",

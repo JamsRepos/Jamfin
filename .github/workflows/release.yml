@@ -25,10 +25,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Run semantic-release
+      - name: Configure Git Remote
+        run: git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
+
+      - name: Run semantic-release with debug logging
         id: release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          DEBUG: semantic-release:*
         run: npx semantic-release --dry-run
 
       - name: Get new release version
