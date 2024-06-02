@@ -12,6 +12,8 @@
     --theme-menu-background-colour: #3a3a3a80;
     --theme-menu-shadow-colour: #fff3;
     --theme--hover-text-colour: #dbdbdb;
+    --theme-restart-colour: #da87287e;
+    --theme-shutdown-colour: #c21c1c9d;
 
     /* General Appearance */
     --theme-roundness: .75rem;
@@ -85,6 +87,7 @@ html {
 .headerRight,
 .dialog,
 .raised,
+.fab,
 .paper-icon-button-light:not(
     .layout-desktop
     .headerLeft
@@ -282,7 +285,7 @@ html {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:hover:not(:disabled),
+    .paper-icon-button-light:hover:not(:disabled, .btnDelete),
     .raised:hover,
     .emby-tab-button:hover {
         border-radius: var(--theme-roundness) !important;
@@ -326,4 +329,32 @@ h2,
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     border: unset;
     padding: 10px;
+}
+
+
+
+/* Admin Settings */
+
+#btnRestartServer {
+    box-shadow: inset 0 1px var(--theme-restart-colour) !important;
+
+}
+
+#btnRestartServer:hover {
+    background-color: var(--theme-restart-colour) !important;
+}
+
+#btnShutdown,
+.btnDelete {
+    box-shadow: inset 0 1px var(--theme-shutdown-colour) !important;
+}
+
+#btnShutdown:hover,
+.btnDelete:hover {
+    color: var(--theme--hover-text-colour) !important;
+    background-color: var(--theme-shutdown-colour) !important;
+}
+
+.listItemIcon:not(.listItemIcon-transparent) {
+    border-radius: var(--theme-roundness);
 }
