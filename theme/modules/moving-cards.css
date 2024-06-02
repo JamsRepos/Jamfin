@@ -4,8 +4,8 @@
     This can be used as a standalone module.
 */
 
-.cardScalable:hover,
-.cardContent:hover,
+.cardScalable:hover:not(.detailImageContainer .cardScalable),
+.cardContent:hover:not(.detailImageContainer .cardContent),
 .cardPadder:hover,
 .blurhash-canvas:hover,
 .dialog:hover,
