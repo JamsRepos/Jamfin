@@ -92,7 +92,7 @@ const config = {
             "@semantic-release/exec",
             {
                 prepareCmd: 'echo "${nextRelease.version}" > VERSION.txt',
-                successCmd: 'NEW_VERSION=${nextRelease.version} && find . -name "README.md" -o -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@.*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@${NEW_VERSION}|g" {} +'
+                successCmd: 'find . -name "README.md" -o -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@.*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@${nextRelease.version}|g" {} +'
             },
         ],
         [
