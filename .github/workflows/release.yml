@@ -17,21 +17,18 @@ jobs:
         with:
           node-version: 21
 
-      - name: Install semantic-release
-        run: npm install -g semantic-release @semantic-release/git @semantic-release/github @semantic-release/changelog
-
-      - name: Configure Git Remote
-        run: git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
+      - name: Install semantic-release dependencies
+        run: npm install -g @semantic-release/git @semantic-release/github @semantic-release/changelog
 
       - name: Run semantic-release
         id: release
+        uses: cycjimmy/semantic-release-action@v4
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npx semantic-release --dry-run
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Get new release version
         id: new_version
-        run: echo "RELEASE_VERSION=$(npx semantic-release version)" >> $GITHUB_ENV
+        run: echo "RELEASE_VERSION=${{ steps.release.outputs.new_release_version }}" >> $GITHUB_ENV
 
       - name: Replace CDN links in README.md
         run: |
