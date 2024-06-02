@@ -1,3 +1,13 @@
+## [1.0.5](https://github.com/JamsRepos/Jamfin/compare/v1.0.4...v1.0.5) (2024-06-02)
+
+### Build System
+
+* :rocket: Fix workflow error with the new version ([0d703cb](https://github.com/JamsRepos/Jamfin/commit/0d703cb76cf723698e717ce3910a3af6b5d7700d))
+
+### Code Refactoring
+
+* :zap: Remove variable from workflow ([750245f](https://github.com/JamsRepos/Jamfin/commit/750245f97ac843d2375ced1e1ba24c77ad82f57e))
+
 ## [1.0.4](https://github.com/JamsRepos/Jamfin/compare/v1.0.3...v1.0.4) (2024-06-02)
 
 ### Bug Fixes
