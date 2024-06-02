@@ -24,7 +24,7 @@ jobs:
       - name: Run semantic-release
         id: release
         env:
-          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          GH_TOKEN: ${{ secrets.SECRET_TOKEN }}
         run: npx semantic-release
 
       - name: Get new release version
@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit updated README.md
         env:
-          SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+          GH_TOKEN: ${{ secrets.SECRET_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
