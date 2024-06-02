@@ -1,3 +1,13 @@
+## [1.0.7](https://github.com/JamsRepos/Jamfin/compare/v1.0.6...v1.0.7) (2024-06-02)
+
+### Build System
+
+* :sparkles: Minor workflow refactoring ([a8ff235](https://github.com/JamsRepos/Jamfin/commit/a8ff2350ccf2732ee1ed7eab2fbb9bda5def7459))
+
+### Chores
+
+* update CDN links to version $(cat VERSION.txt) ([c5faf16](https://github.com/JamsRepos/Jamfin/commit/c5faf165f69425a8709d8bba2b7177b149bf0204))
+
 ## [1.0.6](https://github.com/JamsRepos/Jamfin/compare/v1.0.5...v1.0.6) (2024-06-02)
 
 ### Bug Fixes
