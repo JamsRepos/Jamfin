@@ -16,48 +16,21 @@ const config = {
         [
             "@semantic-release/exec",
             {
-                // use semantic-release logger to print the branch name
                 prepareCmd: 'echo "Branch: ${branch}"',
             },
         ],
         [
             "@semantic-release/commit-analyzer",
             {
-                // Modify default release rules to include types that are not breaking change, feat, or fix as a patch release
-                // Default rules: https://github.com/semantic-release/commit-analyzer/blob/master/lib/default-release-rules.js
                 releaseRules: [
-                    {
-                        scope: "no-release",
-                        release: false,
-                    },
-                    {
-                        type: "build",
-                        release: "patch",
-                    },
-                    {
-                        type: "ci",
-                        release: "patch",
-                    },
-                    {
-                        type: "chore",
-                        release: "patch",
-                    },
-                    {
-                        type: "docs",
-                        release: "patch",
-                    },
-                    {
-                        type: "refactor",
-                        release: "patch",
-                    },
-                    {
-                        type: "style",
-                        release: "patch",
-                    },
-                    {
-                        breaking: true,
-                        release: "major",
-                    },
+                    { scope: "no-release", release: false },
+                    { type: "build", release: "patch" },
+                    { type: "ci", release: "patch" },
+                    { type: "chore", release: "patch" },
+                    { type: "docs", release: "patch" },
+                    { type: "refactor", release: "patch" },
+                    { type: "style", release: "patch" },
+                    { breaking: true, release: "major" },
                 ],
             },
         ],
@@ -93,10 +66,10 @@ const config = {
             {
                 prepareCmd: 'echo "${nextRelease.version}" > VERSION.txt',
                 successCmd: `
-                    NEW_VERSION=\${nextRelease.version} &&
-                    echo "Updating CDN links to version \${NEW_VERSION}" &&
-                    find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${NEW_VERSION}|g" {} \; &&
-                    find . -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@\${NEW_VERSION}|g" {} \;
+                    NEW_VERSION=${nextRelease.version} &&
+                    echo "Updating CDN links to version ${NEW_VERSION}" &&
+                    find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@${NEW_VERSION}|g" {} \; &&
+                    find . -name "complete.css" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@[0-9.]*|https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@${NEW_VERSION}|g" {} \;
                 `
             },
         ],
