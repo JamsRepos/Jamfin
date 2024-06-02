@@ -237,7 +237,9 @@ html {
     margin: 5px;
 }
 
-.cardOverlayContainer > .cardOverlayFab-primary {
+.cardOverlayContainer > .cardOverlayFab-primary,
+.itemProgressBar,
+.mdl-slider-background-upper {
     background-color: var(--theme-menu-background-colour);
     font-size: 110%;
 }
@@ -395,19 +397,22 @@ html {
 .selectLabelFocused,
 .textareaLabelFocused,
 .inputLabelFocused,
+.mdl-slider,
 .metadataSidebarIcon {
     color: var(--theme--hover-colour);
+}
+
+.mdl-slider::-moz-range-thumb,
+.mdl-slider-background-lower,
+.sliderMarker.watched,
+.iconOsdProgressInner {
+    background-color: var(--theme--hover-colour);
 }
 
 .emby-checkbox:checked + span + .checkboxOutline,
 .itemProgressBarForeground,
 .listItemIcon:not(.listItemIcon-transparent) {
     background-color: var(--theme-primary-colour);
-}
-
-.itemProgressBar {
-    height: 7.5px;
-    background-color: var(--theme-menu-background-colour);
 }
 
 .emby-checkbox + span + .checkboxOutline,
