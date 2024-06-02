@@ -1,3 +1,9 @@
+## [1.0.12](https://github.com/JamsRepos/Jamfin/compare/v1.0.11...v1.0.12) (2024-06-02)
+
+### Bug Fixes
+
+* :bug: Fixed reference to the old base file ([ff6ceb6](https://github.com/JamsRepos/Jamfin/commit/ff6ceb6587e56fba72a1295e5e1fb8f5fbb0ae0c))
+
 ## [1.0.11](https://github.com/JamsRepos/Jamfin/compare/v1.0.10...v1.0.11) (2024-06-02)
 
 ### Code Refactoring
