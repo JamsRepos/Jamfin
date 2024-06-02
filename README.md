@@ -18,7 +18,7 @@ The following line includes the base theme as well as all our optional modules. 
 <div align="left">
 
 ```css
-@import url("releasing soon");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/jamfin.css");
 ```
 
 </div>
@@ -28,7 +28,7 @@ If you just want the theme without all our modules integrated, simply copy this 
 <div align="left">
 
 ```css
-@import url("releasing soon");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/jamfin.css");
 ```
 
 </div>
@@ -49,7 +49,7 @@ Not sure if you like our colour scheme? No worries, we allow easy access to our 
 <div align="left">
 
 ```css
-@import url("releasing soon");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.0.0/theme/jamfin.css");
 
 :root {
     /* Colours */

@@ -1,0 +1,41 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - workflow
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install semantic-release
+        run: npm install -g semantic-release @semantic-release/git @semantic-release/github @semantic-release/changelog
+
+      - name: Run semantic-release
+        id: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: semantic-release
+
+      - name: Get new release version
+        id: new_version
+        run: echo "RELEASE_VERSION=$(cat .version)" >> $GITHUB_ENV
+
+      - name: Replace CDN links in README.md
+        run: |
+          NEW_VERSION=${{ env.RELEASE_VERSION }}
+          find . -name "README.md" -type f -exec sed -i "s|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@.*|https://cdn.jsdelivr.net/gh/yourusername/yourrepo@${NEW_VERSION}|g" {} +
+      - name: Commit updated README.md
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "chore 🧹: Updated Version to: ${NEW_VERSION}"
+          git push
