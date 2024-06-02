@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/JamsRepos/Jamfin/compare/v1.0.2...v1.0.3) (2024-06-02)
+
+### Bug Fixes
+
+* :package: Fixed error with NEW_VERSION on workflow execution ([4da2342](https://github.com/JamsRepos/Jamfin/commit/4da23427c7942650b6b04d6265c24820c11974df))
+
 ## [1.0.2](https://github.com/JamsRepos/Jamfin/compare/v1.0.1...v1.0.2) (2024-06-02)
 
 ### Build System
