@@ -216,7 +216,8 @@ html {
     margin: auto !important;
 }
 
-.navMenuOption:hover {
+.navMenuOption:hover,
+.listItem:hover {
     background-color: var(--theme-menu-shadow-colour);
 }
 
@@ -286,4 +287,31 @@ html {
         color: var(--theme--hover-text-colour);
         background-color: var(--theme-menu-shadow-colour) !important;
     }
+}
+
+/* User Settings */
+
+#myPreferencesMenuPage
+.readOnlyContent {
+    background-color: var(--theme-menu-background-colour);
+    border-radius: var(--theme-roundness);
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    padding: 1em;
+}
+
+.readOnlyContent
+.sectionTitle {
+    font-weight: bold;
+}
+
+.listItem-border {
+    border: unset;
+}
+
+.listItem {
+    padding-left: 1.2em !important;
+}
+
+.listItem:hover {
+    border-radius: var(--theme-roundness);
 }
