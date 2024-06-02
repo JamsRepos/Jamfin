@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/JamsRepos/Jamfin/compare/v1.0.3...v1.0.4) (2024-06-02)
+
+### Bug Fixes
+
+* :bug: Replace readme's and complete pack with the new version ([b3d8d27](https://github.com/JamsRepos/Jamfin/commit/b3d8d27a45f180b474974e97b3f62d97635d7228))
+
 ## [1.0.3](https://github.com/JamsRepos/Jamfin/compare/v1.0.2...v1.0.3) (2024-06-02)
 
 ### Bug Fixes
