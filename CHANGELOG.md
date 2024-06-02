@@ -1,3 +1,9 @@
+## [1.0.11](https://github.com/JamsRepos/Jamfin/compare/v1.0.10...v1.0.11) (2024-06-02)
+
+### Code Refactoring
+
+* :pencil2: Prepare the files prior to commit ([43f590a](https://github.com/JamsRepos/Jamfin/commit/43f590ad93cd0c06446c8dc762656c802e05be9c))
+
 ## [1.0.10](https://github.com/JamsRepos/Jamfin/compare/v1.0.9...v1.0.10) (2024-06-02)
 
 ### Code Refactoring
