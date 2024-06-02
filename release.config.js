@@ -17,12 +17,11 @@ const config = {
             "@semantic-release/exec",
             {
                 prepareCmd: `
-                    echo "Branch: ${branch}"
-                `,
-                successCmd: `
+                    echo "Branch: ${branch}" &&
                     echo "\${nextRelease.version}" > VERSION.txt &&
                     echo "Updating CDN links to version \${nextRelease.version}" &&
-                    node replace.version.js \${nextRelease.version} .
+                    node replace.version.js \${nextRelease.version} . &&
+                    git add VERSION.txt README.md theme/complete.css
                 `
             },
         ],
