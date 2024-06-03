@@ -1,3 +1,16 @@
+## [1.0.13](https://github.com/JamsRepos/Jamfin/compare/v1.0.12...v1.0.13) (2024-06-03)
+
+### Bug Fixes
+
+* :bug: Added missing module to the base pack ([0e409d2](https://github.com/JamsRepos/Jamfin/commit/0e409d2e6a1c9d4a356bcd483691eac96be83790))
+* :bug: Item controls no longer flicker when hovering over cards ([31ecf49](https://github.com/JamsRepos/Jamfin/commit/31ecf4916df47d8b429da26c5235082bc9b1cd94))
+* :bug: Slider controls now work on chrome ([1dddc94](https://github.com/JamsRepos/Jamfin/commit/1dddc94686c1df665ca55b8f89fa9dd617f68a43))
+
+### Documentation
+
+* :memo: Added design credit ([d0e750e](https://github.com/JamsRepos/Jamfin/commit/d0e750ea63c05365b5dd9b4d27f8f32786b1704d))
+* :memo: Updated README.md ([3010025](https://github.com/JamsRepos/Jamfin/commit/30100251b1fca4e9d740c519d850848026e5da91))
+
 ## [1.0.12](https://github.com/JamsRepos/Jamfin/compare/v1.0.11...v1.0.12) (2024-06-02)
 
 ### Bug Fixes
