@@ -80,4 +80,8 @@ You will find these within the respective modules folder, to cause less confusio
 <img src="assets/screenshots/library.jpg" alt="Details Page" max-width="500"/>
 <img src="assets/screenshots/admin.jpg" alt="Admin Page" max-width="500"/>
 
+#### 🙏 Special Thanks
+
+Special thanks to [Scyfin](https://github.com/loof2736/scyfin) for design inspiration.
+
 </div>
