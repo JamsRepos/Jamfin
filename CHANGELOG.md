@@ -1,3 +1,9 @@
+## [1.1.4](https://github.com/JamsRepos/Jamfin/compare/v1.1.3...v1.1.4) (2024-06-03)
+
+### Bug Fixes
+
+* :necktie: Fixed admin dashboard leaking outside the screen size ([412f0fa](https://github.com/JamsRepos/Jamfin/commit/412f0fa98ea64a7188fd6fca6bd5e2af07c024c5))
+
 ## [1.1.3](https://github.com/JamsRepos/Jamfin/compare/v1.1.2...v1.1.3) (2024-06-03)
 
 ### Bug Fixes
