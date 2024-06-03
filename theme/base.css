@@ -382,7 +382,6 @@ html {
     background-color: unset;
     background-image: unset;
     box-shadow: unset;
-    pointer-events: none;
 }
 
 .layout-desktop .backdropImage {
