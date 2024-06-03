@@ -1,3 +1,9 @@
+## [1.1.5](https://github.com/JamsRepos/Jamfin/compare/v1.1.4...v1.1.5) (2024-06-03)
+
+### Bug Fixes
+
+* :ambulance: Fixed admin header not being able to be clicked ([0a0ec37](https://github.com/JamsRepos/Jamfin/commit/0a0ec37044a0f142d1574593848165d0e454644f))
+
 ## [1.1.4](https://github.com/JamsRepos/Jamfin/compare/v1.1.3...v1.1.4) (2024-06-03)
 
 ### Bug Fixes
