@@ -4,8 +4,6 @@ if (!branch) {
     throw new Error("CURRENT_BRANCH not set");
 }
 
-const isMain = branch === "main";
-
 /**
  * @type {import("semantic-release").GlobalConfig}
  */
@@ -35,7 +33,7 @@ const config = {
                     { type: "chore", release: "patch" },
                     { type: "docs", release: "patch" },
                     { type: "refactor", release: "patch" },
-                    { type: "style", release: "patch" },
+                    { type: "style", release: "minor" },
                     { breaking: true, release: "major" },
                 ],
             },
@@ -77,7 +75,7 @@ const config = {
     ],
 };
 
-if (isMain) {
+if (branch === "main") {
     config.plugins.splice(-2, 0, "@semantic-release/github");
 }
 
