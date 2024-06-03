@@ -15,6 +15,9 @@
     --theme--hover-colour: #dbdbdb;
     --theme-restart-colour: #da87287e;
     --theme-shutdown-colour: #c21c1c9d;
+    --theme-progress-bar-colour: #cfcfcf;
+    --theme-progress-bar-background-colour: #2c2c2c;
+    --theme-progress-bar-transcoding-colour: #eb7e25;
 
     /* General Appearance */
     --theme-roundness: .75rem;
@@ -253,6 +256,11 @@ html {
     margin: 5px;
 }
 
+.defaultCardBackground1,
+.defaultCardBackground2,
+.defaultCardBackground3,
+.defaultCardBackground4,
+.defaultCardBackground5,
 .cardOverlayContainer > .cardOverlayFab-primary,
 .mdl-slider-background-upper {
     background-color: var(--theme-menu-background-colour);
@@ -478,17 +486,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     color: var(--theme--hover-colour);
 }
 
-.mdl-slider-background-lower,
-.sliderMarker.watched,
-.itemProgressBarForeground,
-.playbackProgress > div,
-.iconOsdProgressInner,
-div[data-role="controlgroup"] a.ui-btn-active {
-    background-color: var(--theme--hover-colour) !important;
-}
-
 .emby-checkbox:checked + span + .checkboxOutline,
-.itemProgressBar,
 .listItemIcon:not(
     .listItemIcon-transparent,
     .notification_important,
@@ -509,11 +507,31 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 /* These need to remain seperare for browser compatibility */
 .mdl-slider::-moz-range-thumb {
-    background-color: var(--theme--hover-colour);
+    background-color: var(--theme-progress-bar-colour);
 }
 .mdl-slider::-webkit-slider-thumb {
-    background-color: var(--theme--hover-colour);
+    background-color: var(--theme-progress-bar-colour);
 }
 .mdl-slider::-ms-thumb {
-    background-color: var(--theme--hover-colour);
+    background-color: var(--theme-progress-bar-colour);
+}
+
+.innerCardFooter .itemProgressBarForeground,
+.playbackProgress > div,
+.mdl-slider-background-lower,
+.sliderMarker.watched,
+.iconOsdProgressInner,
+div[data-role="controlgroup"] a.ui-btn-active {
+    background-color: var(--theme-progress-bar-colour) !important;
+}
+
+.transcodingProgress > div {
+    background-color: var(--theme-progress-bar-transcoding-colour) !important;
+}
+
+.innerCardFooter .itemProgressBar,
+.backgroundProgress > div,
+.sliderMarker.unwatched,
+.mdl-slider-background-flex {
+    background-color: var(--theme-progress-bar-background-colour) !important;
 }

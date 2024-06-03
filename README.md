@@ -59,6 +59,9 @@ Not sure if you like our colour scheme? No worries, we allow easy access to our 
     --theme--hover-colour: #dbdbdb;
     --theme-restart-colour: #da87287e;
     --theme-shutdown-colour: #c21c1c9d;
+    --theme-progress-bar-colour: #cfcfcf;
+    --theme-progress-bar-background-colour: #2c2c2c;
+    --theme-progress-bar-transcoding-colour: #eb7e25;
 
     /* General Appearance */
     --theme-roundness: .75rem;
