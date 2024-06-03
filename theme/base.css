@@ -535,3 +535,8 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .mdl-slider-background-flex {
     background-color: var(--theme-progress-bar-background-colour) !important;
 }
+
+.layout-desktop .dashboardDocument .content-primary:not(.layout-desktop #dashboardPage .content-primary) {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
