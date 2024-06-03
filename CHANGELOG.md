@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/JamsRepos/Jamfin/compare/v1.1.0...v1.1.1) (2024-06-03)
+
+### Style Changes
+
+* :art: Changed the admin page to reflect the rest of the theme ([25a1abb](https://github.com/JamsRepos/Jamfin/commit/25a1abbfbdb730efdc64f78e54262914402a51c6))
+
 ## [1.1.0](https://github.com/JamsRepos/Jamfin/compare/v1.0.13...v1.1.0) (2024-06-03)
 
 ### Bug Fixes
