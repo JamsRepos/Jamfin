@@ -1,3 +1,24 @@
+## [1.1.0](https://github.com/JamsRepos/Jamfin/compare/v1.0.13...v1.1.0) (2024-06-03)
+
+### Bug Fixes
+
+* :art: Added padding to the top of the mobile drawer ([53c0afa](https://github.com/JamsRepos/Jamfin/commit/53c0afa7b1866ed56c75dab9305568d25c7868a9))
+
+### Chores
+
+* :memo: Fix casing issue on version file ([4530f0c](https://github.com/JamsRepos/Jamfin/commit/4530f0c4b09056bcaf26c33a3806d90616cd9d57))
+
+### Style Changes
+
+* :rocket: Changed style to deploy a minor version update ([ee9670f](https://github.com/JamsRepos/Jamfin/commit/ee9670ff7536b8a4bd700d4dfbd0d68be5837b18))
+
+### Code Refactoring
+
+* :art: Added fade in effect for backdrops on mobile ([5d0e72a](https://github.com/JamsRepos/Jamfin/commit/5d0e72ad9794b6153bca56f27d871f26a0a85648))
+* :fire: Tidied up the release config ([c8a65f1](https://github.com/JamsRepos/Jamfin/commit/c8a65f1547d9fd7a10318b5d4a0e1066975f68fa))
+* :sparkles: Added banner fade to mobile devices ([7dd8fa0](https://github.com/JamsRepos/Jamfin/commit/7dd8fa09ee7c74c0adb7d6535080ad1f35abaeb0))
+* :zap: Changed refactor's to create a minor release ([fd245ee](https://github.com/JamsRepos/Jamfin/commit/fd245eec9b25d672dde5d284aab0e9b03a328a74))
+
 ## [1.0.13](https://github.com/JamsRepos/Jamfin/compare/v1.0.12...v1.0.13) (2024-06-03)
 
 ### Bug Fixes
