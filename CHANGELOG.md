@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/JamsRepos/Jamfin/compare/v1.1.1...v1.1.2) (2024-06-03)
+
+### Code Refactoring
+
+* :sparkles: Changed progress bars to have customisable colours ([fe35ca3](https://github.com/JamsRepos/Jamfin/commit/fe35ca3c17f38f55465971a78c05111d99b386ee))
+
 ## [1.1.1](https://github.com/JamsRepos/Jamfin/compare/v1.1.0...v1.1.1) (2024-06-03)
 
 ### Style Changes
