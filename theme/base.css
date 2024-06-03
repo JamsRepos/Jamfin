@@ -89,7 +89,8 @@ html {
     .headerRight .paper-icon-button-light
 ),
 .osdHeader .headerLeft .paper-icon-button-light,
-.detailButton {
+.detailButton,
+.sliderBubble {
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
@@ -225,6 +226,7 @@ html {
     border-radius: var(--theme-roundness) !important;
     background: unset;
     box-shadow: inset 0 2px var(--theme-menu-shadow-colour) !important;
+    transition: unset;
 }
 
 .layout-mobile .cardOverlayButton {
@@ -439,7 +441,6 @@ html {
     color: var(--theme--hover-colour);
 }
 
-.mdl-slider::-moz-range-thumb,
 .mdl-slider-background-lower,
 .sliderMarker.watched,
 .itemProgressBarForeground,
@@ -462,4 +463,15 @@ html {
 .mdl-spinner__layer-3,
 .mdl-spinner__layer-4 {
     border-color: var(--theme-base-colour) !important;
+}
+
+/* These need to remain seperare for browser compatibility */
+.mdl-slider::-moz-range-thumb {
+    background-color: var(--theme--hover-colour);
+}
+.mdl-slider::-webkit-slider-thumb {
+    background-color: var(--theme--hover-colour);
+}
+.mdl-slider::-ms-thumb {
+    background-color: var(--theme--hover-colour);
 }

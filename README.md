@@ -1,7 +1,7 @@
 <div align="center">
 <img src="assets/logo.png" alt="Logo" width="125"/>
 
-( <a href="https://github.com/JamsRepos/Jamfin">About</a> - <a href="https://github.com/JamsRepos/Jamfin#examples">Screenshots</a> )
+( <a href="https://github.com/JamsRepos/Jamfin#ℹ%EF%B8%8F-welcome">About</a> - <a href="https://github.com/JamsRepos/Jamfin#-screenshots">Screenshots</a> )
 
 ## ℹ️ Welcome
 
@@ -79,5 +79,9 @@ You will find these within the respective modules folder, to cause less confusio
 <img src="assets/screenshots/details.jpg" alt="Details Page" max-width="500"/>
 <img src="assets/screenshots/library.jpg" alt="Details Page" max-width="500"/>
 <img src="assets/screenshots/admin.jpg" alt="Admin Page" max-width="500"/>
+
+#### 🙏 Special Thanks
+
+Special thanks to [Scyfin](https://github.com/loof2736/scyfin) for design inspiration.
 
 </div>
