@@ -33,7 +33,7 @@ const config = {
                     { type: "chore", release: "patch" },
                     { type: "docs", release: "patch" },
                     { type: "refactor", release: "patch" },
-                    { type: "style", release: "minor" },
+                    { type: "style", release: "patch" },
                     { breaking: true, release: "major" },
                 ],
             },
