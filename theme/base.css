@@ -382,11 +382,13 @@ html {
     background: linear-gradient(180deg, transparent, var(--theme-background-colour));
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer {
+.noBackdropTransparency .detailPageSecondaryContainer,
+.layout-mobile .detailPageWrapperContainer {
     position: relative;
 }
 
-.noBackdropTransparency .detailPageSecondaryContainer::before {
+.noBackdropTransparency .detailPageSecondaryContainer::before,
+.layout-mobile .detailPageWrapperContainer::before {
     content: '';
     position: absolute;
     top: -50%;
