@@ -1,3 +1,13 @@
+## [1.1.3](https://github.com/JamsRepos/Jamfin/compare/v1.1.2...v1.1.3) (2024-06-03)
+
+### Bug Fixes
+
+* :bug: Fixed issue with admin page touching the navigation menu ([2173de7](https://github.com/JamsRepos/Jamfin/commit/2173de7e375976d64ea9e0e69cb3ea204f918c84))
+
+### Documentation
+
+* :camera_flash: Updated image to reflect the new progress bars ([cbd62d8](https://github.com/JamsRepos/Jamfin/commit/cbd62d890f05065694ac91156eb73325fd805ba1))
+
 ## [1.1.2](https://github.com/JamsRepos/Jamfin/compare/v1.1.1...v1.1.2) (2024-06-03)
 
 ### Code Refactoring
