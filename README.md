@@ -1,7 +1,7 @@
 <div align="center">
 <img src="assets/logo.png" alt="Logo" width="125"/>
 
-( <a href="https://github.com/JamsRepos/Jamfin">About</a> - <a href="https://github.com/JamsRepos/Jamfin#examples">Screenshots</a> )
+( <a href="https://github.com/JamsRepos/Jamfin#ℹ%EF%B8%8F-welcome">About</a> - <a href="https://github.com/JamsRepos/Jamfin#-screenshots">Screenshots</a> )
 
 ## ℹ️ Welcome
 
