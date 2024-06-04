@@ -12,7 +12,7 @@
     --theme-menu-background-colour: #3a3a3a80;
     --theme-menu-shadow-colour: #fff3;
     --theme-base-colour: #696969;
-    --theme--hover-colour: #dbdbdb;
+    --theme-hover-colour: #dbdbdb;
     --theme-restart-colour: #da87287e;
     --theme-shutdown-colour: #c21c1c9d;
     --theme-progress-bar-colour: #cfcfcf;
@@ -96,7 +96,9 @@ html {
 .sliderBubble,
 .MuiDataGrid-root,
 .MuiMenu-list,
-.toast.toastVisible {
+.toast.toastVisible,
+.guide-date-tab-button.emby-tab-button-active,
+.guide-date-tab-button:focus {
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
@@ -119,7 +121,8 @@ html {
 .headerTabs .emby-tab-button,
 .headerRight .paper-icon-button-light,
 .detailButton,
-.sessionCardButton {
+.sessionCardButton,
+.guideOptions {
     padding: .556em !important;
     margin: 0 .29em !important;
     border-radius: var(--theme-roundness);
@@ -279,7 +282,7 @@ html {
     -moz-transform: unset;
     -o-transform: unset;
     -ms-transform: unset;
-    color: var(--theme--hover-colour);
+    color: var(--theme-hover-colour);
     background-color: var(--theme-menu-shadow-colour) !important;
 }
 
@@ -302,7 +305,9 @@ html {
 
 .listItem:hover,
 .MuiButtonBase-root,
-.MuiButtonBase-root:hover {
+.MuiButtonBase-root:hover,
+.emby-tab-button,
+progress {
     border-radius: var(--theme-roundness);
 }
 
@@ -436,7 +441,7 @@ html {
 #btnRestartServer:hover,
 .notifications,
 .MuiChip-filledInfo {
-    color: var(--theme--hover-colour) !important;
+    color: var(--theme-hover-colour) !important;
     background-color: var(--theme-restart-colour) !important;
 }
 
@@ -449,7 +454,7 @@ html {
 .btnDelete:hover,
 .notification_important,
 .MuiChip-filledError {
-    color: var(--theme--hover-colour) !important;
+    color: var(--theme-hover-colour) !important;
     background-color: var(--theme-shutdown-colour) !important;
 }
 
@@ -487,8 +492,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .inputLabelFocused,
 .mdl-slider,
 .metadataSidebarIcon,
-.button-link {
-    color: var(--theme--hover-colour);
+.button-link,
+.guide-date-tab-button.emby-tab-button-active,
+.guide-date-tab-button:focus {
+    color: var(--theme-hover-colour);
 }
 
 .emby-checkbox:checked + span + .checkboxOutline,
@@ -496,7 +503,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     .listItemIcon-transparent,
     .notification_important,
     .notifications
-) {
+),
+.guide-channelHeaderCell:focus,
+.programCell:focus {
     background-color: var(--theme-base-colour) !important;
 }
 
@@ -511,13 +520,16 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 /* These need to remain seperare for browser compatibility */
-.mdl-slider::-moz-range-thumb {
+.mdl-slider::-moz-range-thumb,
+progress::-moz-progress-bar {
     background-color: var(--theme-progress-bar-colour);
 }
-.mdl-slider::-webkit-slider-thumb {
+.mdl-slider::-webkit-slider-thumb,
+progress::-webkit-progress-bar {
     background-color: var(--theme-progress-bar-colour);
 }
-.mdl-slider::-ms-thumb {
+.mdl-slider::-ms-thumb,
+progress::-ms-thumb {
     background-color: var(--theme-progress-bar-colour);
 }
 
@@ -537,7 +549,8 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .innerCardFooter .itemProgressBar,
 .backgroundProgress > div,
 .sliderMarker.unwatched,
-.mdl-slider-background-flex {
+.mdl-slider-background-flex,
+progress {
     background-color: var(--theme-progress-bar-background-colour) !important;
 }
 
