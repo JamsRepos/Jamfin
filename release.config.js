@@ -31,7 +31,7 @@ const config = {
                     { type: "build", release: "patch" },
                     { type: "ci", release: "patch" },
                     { type: "chore", release: "patch" },
-                    { type: "docs", release: "patch" },
+                    { type: "docs", release: false },
                     { type: "refactor", release: "patch" },
                     { type: "style", release: "patch" },
                     { breaking: true, release: "major" },
