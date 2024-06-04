@@ -4,11 +4,11 @@
     You can grab the base theme by changing jamfin.css to base.css in the first line.
 */
 
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/base.css");
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/modules/central-libraries-small.css");
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/modules/change-logo.css");
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/modules/count-indicators.css");
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/modules/forgot-password.css");
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/modules/hide-my-media.css");
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/modules/moving-cards.css");
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.5/theme/modules/smaller-cast.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/base.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/modules/central-libraries-small.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/modules/change-logo.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/modules/count-indicators.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/modules/forgot-password.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/modules/hide-my-media.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/modules/moving-cards.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.1.6/theme/modules/smaller-cast.css");

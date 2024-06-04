@@ -1,3 +1,14 @@
+## [1.1.6](https://github.com/JamsRepos/Jamfin/compare/v1.1.5...v1.1.6) (2024-06-04)
+
+### Documentation
+
+* :camera_flash: Updated screenshots to include hover states ([663763c](https://github.com/JamsRepos/Jamfin/commit/663763c2d70dd65b71910345387d3df326225d51))
+* :rocket: Docs no longer cause deployments ([171d0ec](https://github.com/JamsRepos/Jamfin/commit/171d0ecbb110016e16ea7fcac6164beb980ec83d))
+
+### Style Changes
+
+* :camera_flash: Updated logo replacment module to use Jamfin banner as default ([3452aa8](https://github.com/JamsRepos/Jamfin/commit/3452aa85282509422d0eeacf3d9c2a1a0ad9e1b5))
+
 ## [1.1.5](https://github.com/JamsRepos/Jamfin/compare/v1.1.4...v1.1.5) (2024-06-03)
 
 ### Bug Fixes
