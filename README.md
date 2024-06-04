@@ -1,6 +1,8 @@
 <div align="center">
 <img src="assets/logo.png" alt="Logo" width="125"/>
 
+[![Download Hits](https://data.jsdelivr.com/v1/package/gh/JamsRepos/Jamfin/badge)](https://www.jsdelivr.com/package/gh/JamsRepos/Jamfin)
+
 ( <a href="https://github.com/JamsRepos/Jamfin#ℹ%EF%B8%8F-welcome">About</a> - <a href="https://github.com/JamsRepos/Jamfin#-screenshots">Screenshots</a> )
 
 ## ℹ️ Welcome

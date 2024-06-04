@@ -41,7 +41,7 @@ html {
 
 /* Re-design the Header */
 
-[dir="ltr"] .pageTitle {
+.layout-desktop [dir="ltr"] .pageTitle {
     margin-left: 1.2em;
 }
 
