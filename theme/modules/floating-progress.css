@@ -1,0 +1,22 @@
+/*
+    This module will make progress bars float from the bottom of the card.
+    This is useful if you wish to make the progress bar more visible.
+    This can be used as a standalone module.
+*/
+
+:root {
+    --floating-progress-roundness: .75rem;
+    --floating-progress-height: 10px;
+}
+
+.itemProgressBar {
+    height: var(--floating-progress-height);
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+}
+
+.fullInnerCardFooter {
+    width: 95%;
+    bottom: 10px;
+    margin: 0 auto;
+    border-radius: var(--floating-progress-roundness);
+}
