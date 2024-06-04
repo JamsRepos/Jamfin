@@ -77,7 +77,6 @@ You will find these within the respective modules folder, to cause less confusio
 
 ## 📷 Screenshots
 
-<img src="assets/screenshots/login.jpg" alt="Login Page" max-width="500"/>
 <img src="assets/screenshots/home.jpg" alt="Home Page" max-width="500"/>
 <img src="assets/screenshots/details.jpg" alt="Details Page" max-width="500"/>
 <img src="assets/screenshots/library.jpg" alt="Details Page" max-width="500"/>
