@@ -1,3 +1,9 @@
+## [1.1.7](https://github.com/JamsRepos/Jamfin/compare/v1.1.6...v1.1.7) (2024-06-04)
+
+### Code Refactoring
+
+* :camera_flash: Updated logo to the height of the navigation bar ([ce263ef](https://github.com/JamsRepos/Jamfin/commit/ce263efcff13a689b9d4beb96d7bb4bc003d916e))
+
 ## [1.1.6](https://github.com/JamsRepos/Jamfin/compare/v1.1.5...v1.1.6) (2024-06-04)
 
 ### Documentation
