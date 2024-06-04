@@ -1,3 +1,21 @@
+## [1.2.0](https://github.com/JamsRepos/Jamfin/compare/v1.1.7...v1.2.0) (2024-06-04)
+
+### New Features
+
+* :sparkles: Added new module, floating progress bars ([480f810](https://github.com/JamsRepos/Jamfin/commit/480f810611500e3230d31a6d4bd7e44d7af0ae6b))
+
+### Bug Fixes
+
+* :art: Replaced remaining Jellyfin colours on Live TV ([53681d7](https://github.com/JamsRepos/Jamfin/commit/53681d7bd0408d7e3798fe3358ea656eb3dfc609))
+
+### Documentation
+
+* :memo: Added download hits to the README ([24ddd1b](https://github.com/JamsRepos/Jamfin/commit/24ddd1b81d306286ab587e7118515bc372c5622e))
+
+### Style Changes
+
+* :art: Added design to toast notifications ([faea3a7](https://github.com/JamsRepos/Jamfin/commit/faea3a7949c7dac02e3bcce65fb0512bd7b8669e))
+
 ## [1.1.7](https://github.com/JamsRepos/Jamfin/compare/v1.1.6...v1.1.7) (2024-06-04)
 
 ### Code Refactoring
