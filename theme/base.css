@@ -95,7 +95,8 @@ html {
 .detailButton,
 .sliderBubble,
 .MuiDataGrid-root,
-.MuiMenu-list {
+.MuiMenu-list,
+.toast.toastVisible {
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
