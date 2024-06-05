@@ -1,3 +1,14 @@
+## [1.3.0](https://github.com/JamsRepos/Jamfin/compare/v1.2.0...v1.3.0) (2024-06-05)
+
+### New Features
+
+* :sparkles: Added TV Support ([b9bf04b](https://github.com/JamsRepos/Jamfin/commit/b9bf04be578d173b63040cffbacd4f1a69de3bd7))
+
+### Documentation
+
+* :camera_flash: Updated home preview image ([7f1973b](https://github.com/JamsRepos/Jamfin/commit/7f1973bac7165336c1b426ab5d2370d70d750c35))
+* :camera_flash: Updated home screenshot to include hover preview ([3095df4](https://github.com/JamsRepos/Jamfin/commit/3095df4f3af11804fb6de4c6e776a024f1e75510))
+
 ## [1.2.0](https://github.com/JamsRepos/Jamfin/compare/v1.1.7...v1.2.0) (2024-06-04)
 
 ### New Features
