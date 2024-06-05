@@ -129,6 +129,7 @@ html {
 }
 
 .layout-desktop .headerTabs,
+.layout-desktop .headerLeft,
 .layout-desktop .headerRight,
 .layout-desktop .emby-tabs-slider,
 .layout-desktop .raised {
@@ -160,6 +161,24 @@ html {
 
     .layout-desktop .headerRight {
         margin-right: .8em;
+    }
+}
+
+.layout-tv .sectionTabs {
+    width: unset;
+}
+
+@media (min-width: 100em) {
+    .layout-tv .headerTabs {
+        margin-top: unset;
+    }
+}
+
+@media (max-width: 100em) {
+    .sectionTabs {
+        width: fit-content;
+        align-self: center;
+        font-size: 125%;
     }
 }
 
@@ -275,15 +294,23 @@ html {
 .paper-icon-button-light:hover:not(:disabled, .btnDelete),
 .raised:hover,
 .emby-tab-button:hover,
-.detailButton:hover {
+.detailButton:hover,
+.emby-tab-button.show-focus:focus,
+.paper-icon-button-light.show-focus:focus,
+.emby-button.show-focus:focus,
+.alphaPickerButton-tv:focus {
     border-radius: var(--theme-roundness) !important;
-    transform: unset;
-    -webkit-transform: unset;
-    -moz-transform: unset;
-    -o-transform: unset;
-    -ms-transform: unset;
+    transform: unset !important;
+    -webkit-transform: unset !important;
+    -moz-transform: unset !important;
+    -o-transform: unset !important;
+    -ms-transform: unset !important;
     color: var(--theme-hover-colour);
     background-color: var(--theme-menu-shadow-colour) !important;
+}
+
+.layout-tv .itemDetailsGroup .emby-button.show-focus:focus {
+    padding: 5px 10px;
 }
 
 /* User Settings */
@@ -432,6 +459,10 @@ progress {
     pointer-events: none;
 }
 
+.itemsContainer-tv {
+    margin-left: 10px;
+}
+
 /* Admin Settings */
 
 #btnRestartServer {
@@ -505,7 +536,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     .notifications
 ),
 .guide-channelHeaderCell:focus,
-.programCell:focus {
+.programCell:focus,
+.emby-button.show-focus:focus,
+::selection {
     background-color: var(--theme-base-colour) !important;
 }
 
