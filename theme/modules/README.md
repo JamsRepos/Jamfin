@@ -12,7 +12,7 @@ The general format to install a module is as followed, you will need to replace 
 <div align="left">
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.3.1/theme/modules/<name>.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.3.2/theme/modules/<name>.css");
 ```
 
 </div>

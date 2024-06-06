@@ -1,3 +1,9 @@
+## [1.3.2](https://github.com/JamsRepos/Jamfin/compare/v1.3.1...v1.3.2) (2024-06-06)
+
+### Style Changes
+
+* :art: Improved the admin panel styling ([5ad4879](https://github.com/JamsRepos/Jamfin/commit/5ad48792d997eddfea066311c19536c14815e32f))
+
 ## [1.3.1](https://github.com/JamsRepos/Jamfin/compare/v1.3.0...v1.3.1) (2024-06-06)
 
 ### Bug Fixes
