@@ -297,8 +297,7 @@ html {
 .defaultCardBackground3,
 .defaultCardBackground4,
 .defaultCardBackground5,
-.cardOverlayContainer > .cardOverlayFab-primary,
-.mdl-slider-background-upper {
+.cardOverlayContainer > .cardOverlayFab-primary {
     background-color: var(--theme-menu-background-colour);
     font-size: 110%;
 }
@@ -570,23 +569,69 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 
 /* These need to remain seperare for browser compatibility */
-.mdl-slider::-moz-range-thumb,
+progress {
+    background-color: var(--theme-progress-bar-colour);
+}
+
 progress::-moz-progress-bar {
     background-color: var(--theme-progress-bar-colour);
 }
-.mdl-slider::-webkit-slider-thumb,
 progress::-webkit-progress-bar {
     background-color: var(--theme-progress-bar-colour);
 }
-.mdl-slider::-ms-thumb,
 progress::-ms-thumb {
     background-color: var(--theme-progress-bar-colour);
+}
+
+.mdl-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mdl-slider::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mdl-slider::-ms-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mdl-slider-background-flex,
+.mdl-slider-background-lower,
+.mdl-slider-background-upper {
+    border-radius: var(--theme-roundness);
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    height: 10px;
+}
+
+.sliderMarkerContainer {
+    display: none;
+}
+
+.mdl-slider-background-upper {
+    margin-left:  -3px;
 }
 
 .innerCardFooter .itemProgressBarForeground,
 .playbackProgress > div,
 .mdl-slider-background-lower,
-.sliderMarker.watched,
 .iconOsdProgressInner {
     background-color: var(--theme-progress-bar-colour) !important;
 }
@@ -597,7 +642,6 @@ progress::-ms-thumb {
 
 .innerCardFooter .itemProgressBar,
 .backgroundProgress > div,
-.sliderMarker.unwatched,
 .mdl-slider-background-flex,
 progress {
     background-color: var(--theme-progress-bar-background-colour) !important;
