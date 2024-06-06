@@ -12,7 +12,7 @@
     --theme-menu-background-colour: #3a3a3a80;
     --theme-menu-shadow-colour: #fff3;
     --theme-base-colour: #696969;
-    --theme-hover-colour: #dbdbdb;
+    --theme-text-colour: #dbdbdb;
     --theme-restart-colour: #da87287e;
     --theme-shutdown-colour: #c21c1c9d;
     --theme-progress-bar-colour: #cfcfcf;
@@ -96,9 +96,12 @@ html {
 .sliderBubble,
 .MuiDataGrid-root,
 .MuiMenu-list,
+.MuiButton-root,
 .toast.toastVisible,
 .guide-date-tab-button.emby-tab-button-active,
-.guide-date-tab-button:focus {
+.guide-date-tab-button:focus,
+.MuiTabs-centered .MuiTab-root {
+    color: var(--theme-text-colour);
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
@@ -122,7 +125,8 @@ html {
 .headerRight .paper-icon-button-light,
 .detailButton,
 .sessionCardButton,
-.guideOptions {
+.guideOptions,
+.MuiTabs-centered .MuiTab-root {
     padding: .556em !important;
     margin: 0 .29em !important;
     border-radius: var(--theme-roundness);
@@ -233,14 +237,15 @@ html {
 .navMenuOption-selected,
 .navMenuOption:hover,
 .MuiListItem-root,
-.Mui-selected {
+.MuiDrawer-paperAnchorLeft .MuiButtonBase-root {
     border-radius: var(--theme-roundness) !important;
     width: 80%;
     margin: auto !important;
 }
 
 .navMenuOption:hover,
-.listItem:hover {
+.listItem:hover,
+.MuiButton-root:hover {
     background-color: var(--theme-menu-shadow-colour);
 }
 
@@ -313,7 +318,7 @@ html {
     -moz-transform: unset !important;
     -o-transform: unset !important;
     -ms-transform: unset !important;
-    color: var(--theme-hover-colour);
+    color: var(--theme-text-colour);
     background-color: var(--theme-menu-shadow-colour) !important;
 }
 
@@ -419,7 +424,8 @@ progress {
 }
 
 .layout-desktop .backgroundContainer.withBackdrop,
-.MuiPaper-root {
+.MuiPaper-root,
+.MuiTabs-indicator {
     background-color: unset;
     background-image: unset;
     box-shadow: unset;
@@ -480,7 +486,7 @@ progress {
 #btnRestartServer:hover,
 .notifications,
 .MuiChip-filledInfo {
-    color: var(--theme-hover-colour) !important;
+    color: var(--theme-text-colour) !important;
     background-color: var(--theme-restart-colour) !important;
 }
 
@@ -493,7 +499,7 @@ progress {
 .btnDelete:hover,
 .notification_important,
 .MuiChip-filledError {
-    color: var(--theme-hover-colour) !important;
+    color: var(--theme-text-colour) !important;
     background-color: var(--theme-shutdown-colour) !important;
 }
 
@@ -533,8 +539,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .metadataSidebarIcon,
 .button-link,
 .guide-date-tab-button.emby-tab-button-active,
-.guide-date-tab-button:focus {
-    color: var(--theme-hover-colour);
+.guide-date-tab-button:focus,
+#divRunningTasks span,
+.MuiAlert-icon {
+    color: var(--theme-text-colour) !important;
 }
 
 .emby-checkbox:checked + span + .checkboxOutline,
