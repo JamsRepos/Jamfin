@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/JamsRepos/Jamfin/compare/v1.3.0...v1.3.1) (2024-06-06)
+
+### Bug Fixes
+
+* 🐛 Reduced font size for the header on mobile ([54a07b4](https://github.com/JamsRepos/Jamfin/commit/54a07b46248ad6d122a4681f6c79bcd701f0358a))
+
 ## [1.3.0](https://github.com/JamsRepos/Jamfin/compare/v1.2.0...v1.3.0) (2024-06-05)
 
 ### New Features
