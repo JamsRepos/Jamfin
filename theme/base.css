@@ -147,11 +147,6 @@ html {
     margin-left: 250px;
 }
 
-.layout-mobile .headerTabs {
-    margin: 10px auto;
-    width: auto;
-}
-
 @media (max-width: 1599px) {
     .layout-desktop .sectionTabs {
         width: auto;
@@ -162,6 +157,15 @@ html {
     .layout-desktop .headerRight {
         margin-right: .8em;
     }
+
+    .layout-mobile .headerTabs {
+        margin: 20px auto;
+        width: auto;
+    }
+
+    .layout-mobile .pageTitleWithLogo {
+        height: 40px;
+    }
 }
 
 .layout-tv .sectionTabs {
@@ -171,6 +175,10 @@ html {
 @media (min-width: 100em) {
     .layout-tv .headerTabs {
         margin-top: unset;
+    }
+
+    .layout-mobile .headerTabs {
+        margin-top: -1.3em;
     }
 }
 
@@ -538,7 +546,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .guide-channelHeaderCell:focus,
 .programCell:focus,
 .emby-button.show-focus:focus,
-::selection {
+::selection,
+div[data-role="controlgroup"] a.ui-btn-active {
     background-color: var(--theme-base-colour) !important;
 }
 
@@ -570,8 +579,7 @@ progress::-ms-thumb {
 .playbackProgress > div,
 .mdl-slider-background-lower,
 .sliderMarker.watched,
-.iconOsdProgressInner,
-div[data-role="controlgroup"] a.ui-btn-active {
+.iconOsdProgressInner {
     background-color: var(--theme-progress-bar-colour) !important;
 }
 
