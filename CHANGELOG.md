@@ -1,3 +1,9 @@
+## [1.3.3](https://github.com/JamsRepos/Jamfin/compare/v1.3.2...v1.3.3) (2024-06-06)
+
+### Style Changes
+
+* :art: Added styling to the progress bar ([f12c76a](https://github.com/JamsRepos/Jamfin/commit/f12c76aaa5642d2f8d3d2091461d822ea3327085))
+
 ## [1.3.2](https://github.com/JamsRepos/Jamfin/compare/v1.3.1...v1.3.2) (2024-06-06)
 
 ### Style Changes
