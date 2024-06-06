@@ -175,7 +175,7 @@ html {
 }
 
 @media (max-width: 100em) {
-    .sectionTabs {
+    .layout-tv .sectionTabs {
         width: fit-content;
         align-self: center;
         font-size: 125%;
