@@ -554,7 +554,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .programCell:focus,
 .emby-button.show-focus:focus,
 ::selection,
-div[data-role="controlgroup"] a.ui-btn-active {
+div[data-role="controlgroup"] a.ui-btn-active,
+.MuiAvatar-root {
     background-color: var(--theme-base-colour) !important;
 }
 
