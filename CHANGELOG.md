@@ -1,3 +1,13 @@
+## [1.3.4](https://github.com/JamsRepos/Jamfin/compare/v1.3.3...v1.3.4) (2024-06-07)
+
+### Bug Fixes
+
+* :bug: Offset title on dialog boxes ([303d0df](https://github.com/JamsRepos/Jamfin/commit/303d0df9037cf58108ed69d1e6dbf22575b0d839))
+
+### Code Refactoring
+
+* :art: Changed the colour of the default profile picture ([2b088b6](https://github.com/JamsRepos/Jamfin/commit/2b088b6b3931c4227604356bb72ed2a62ccfc2c5))
+
 ## [1.3.3](https://github.com/JamsRepos/Jamfin/compare/v1.3.2...v1.3.3) (2024-06-06)
 
 ### Style Changes
