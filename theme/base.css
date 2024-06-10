@@ -439,11 +439,11 @@ progress {
 }
 
 .darkenContent {
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    -moz-backdrop-filter: blur(5px);
-    -o-backdrop-filter: blur(5px);
-    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) brightness(0.75);
+    -webkit-backdrop-filter: blur(5px) brightness(0.75);
+    -moz-backdrop-filter: blur(5px) brightness(0.75);
+    -o-backdrop-filter: blur(5px) brightness(0.75);
+    -ms-backdrop-filter: blur(5px) brightness(0.75);
     background: -webkit-linear-gradient(180deg, transparent, var(--theme-background-colour));
     background: -moz-linear-gradient(180deg, transparent, var(--theme-background-colour));
     background: -o-linear-gradient(180deg, transparent, var(--theme-background-colour));
