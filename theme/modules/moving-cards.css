@@ -4,18 +4,6 @@
     This can be used as a standalone module.
 */
 
-.cardScalable:hover:not(
-    .detailImageContainer .cardScalable,
-    .dashboardSection .cardScalable
-),
-.cardContent:hover:not(
-    .detailImageContainer .cardContent,
-    .dashboardSection
-    .cardContent
-),
-.cardPadder:hover,
-.blurhash-canvas:hover,
-.dialog:hover,
-.itemSelectionPanel:hover {
+.cardBox:hover {
     transform: translateY(-2.5px);
 }
