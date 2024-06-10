@@ -9,14 +9,29 @@
     --floating-progress-height: 10px;
 }
 
+.sessionNowPlayingDetails {
+    padding-bottom: 10px;
+}
+
+.fullInnerCardFooter,
+.activeSession .backgroundProgress,
+.activeSession .playbackProgress,
+.activeSession .transcodingProgress {
+    width: 95%;
+    bottom: 10px;
+    margin: 0 auto;
+    height: var(--floating-progress-height);
+    border-radius: var(--floating-progress-roundness) !important;
+}
+
 .itemProgressBar {
     height: var(--floating-progress-height);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
 }
 
-.fullInnerCardFooter {
-    width: 95%;
-    bottom: 10px;
-    margin: 0 auto;
+.playbackProgress > div,
+.backgroundProgress > div,
+.transcodingProgress > div {
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     border-radius: var(--floating-progress-roundness);
 }
