@@ -616,6 +616,10 @@ div[data-role="controlgroup"] a.ui-btn-active,
     margin-left:  -3px;
 }
 
+.mdl-slider-background-flex-container {
+    top: 5px;
+}
+
 .innerCardFooter .itemProgressBarForeground,
 .playbackProgress > div,
 .mdl-slider-background-lower,
