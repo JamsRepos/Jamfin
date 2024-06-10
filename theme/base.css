@@ -540,7 +540,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .guide-date-tab-button.emby-tab-button-active,
 .guide-date-tab-button:focus,
 #divRunningTasks span,
-.MuiAlert-icon {
+.MuiAlert-icon,
+.listItemBodyText span {
     color: var(--theme-text-colour) !important;
 }
 
@@ -567,21 +568,6 @@ div[data-role="controlgroup"] a.ui-btn-active,
 .mdl-spinner__layer-3,
 .mdl-spinner__layer-4 {
     border-color: var(--theme-base-colour) !important;
-}
-
-/* These need to remain seperare for browser compatibility */
-progress {
-    background-color: var(--theme-progress-bar-colour);
-}
-
-progress::-moz-progress-bar {
-    background-color: var(--theme-progress-bar-colour);
-}
-progress::-webkit-progress-bar {
-    background-color: var(--theme-progress-bar-colour);
-}
-progress::-ms-thumb {
-    background-color: var(--theme-progress-bar-colour);
 }
 
 .mdl-slider {
@@ -633,8 +619,21 @@ progress::-ms-thumb {
 .innerCardFooter .itemProgressBarForeground,
 .playbackProgress > div,
 .mdl-slider-background-lower,
-.iconOsdProgressInner {
+.iconOsdProgressInner,
+.taskProgressInner,
+progress {
     background-color: var(--theme-progress-bar-colour) !important;
+}
+
+/* These need to remain seperare for browser compatibility */
+progress::-moz-progress-bar {
+    background-color: var(--theme-progress-bar-colour);
+}
+progress::-webkit-progress-bar {
+    background-color: var(--theme-progress-bar-colour);
+}
+progress::-ms-thumb {
+    background-color: var(--theme-progress-bar-colour);
 }
 
 .transcodingProgress > div {
@@ -644,6 +643,7 @@ progress::-ms-thumb {
 .innerCardFooter .itemProgressBar,
 .backgroundProgress > div,
 .mdl-slider-background-flex,
+.taskProgressOuter,
 progress {
     background-color: var(--theme-progress-bar-background-colour) !important;
 }
