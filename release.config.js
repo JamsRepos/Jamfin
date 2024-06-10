@@ -46,12 +46,14 @@ const config = {
                     ],
                 },
             },
+        ],
+        [
+            "@semantic-release/exec",
+            {
+                successCmd: 'curl -X GET "https://purge.jsdelivr.net/gh/JamsRepos/Jamfin"'
+            }
         ]
     ],
 };
-
-if (branch === "main") {
-    config.plugins.splice(-2, 0, "@semantic-release/github");
-}
 
 module.exports = config;
