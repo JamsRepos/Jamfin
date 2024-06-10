@@ -12,18 +12,6 @@ const config = {
     repositoryUrl: "https://github.com/JamsRepos/Jamfin.git",
     plugins: [
         [
-            "@semantic-release/exec",
-            {
-                prepareCmd: `
-                    echo "Branch: ${branch}" &&
-                    echo "\${nextRelease.version}" > VERSION.txt &&
-                    echo "Updating CDN links to version \${nextRelease.version}" &&
-                    node replace.version.js \${nextRelease.version} . &&
-                    git add VERSION.txt README.md theme/complete.css
-                `
-            },
-        ],
-        [
             "@semantic-release/commit-analyzer",
             {
                 releaseRules: [
@@ -58,20 +46,7 @@ const config = {
                     ],
                 },
             },
-        ],
-        [
-            "@semantic-release/changelog",
-            {
-                changelogFile: "CHANGELOG.md",
-            },
-        ],
-        [
-            "@semantic-release/git",
-            {
-                assets: ["CHANGELOG.md", "VERSION.txt", "README.md", "theme/complete.css"],
-                message: "chore: 🧹 \${nextRelease.version}\n\n\${nextRelease.notes}",
-            },
-        ],
+        ]
     ],
 };
 

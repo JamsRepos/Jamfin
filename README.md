@@ -20,7 +20,7 @@ The following line includes the base theme as well as all our optional modules. 
 <div align="left">
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.3.4/theme/complete.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@latest/theme/complete.css");
 ```
 
 </div>
@@ -30,7 +30,7 @@ If you just want the theme without all our modules integrated, simply copy this 
 <div align="left">
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@1.3.4/theme/base.css");
+@import url("https://cdn.jsdelivr.net/gh/JamsRepos/Jamfin@latest/theme/base.css");
 ```
 
 </div>
