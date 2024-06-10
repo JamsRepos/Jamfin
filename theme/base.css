@@ -656,3 +656,15 @@ progress {
 [dir="ltr"] .formDialogHeaderTitle:first-child {
     margin-left: unset;
 }
+
+/* Login Form */
+
+#loginPage {
+    background-color: var(--theme-menu-background-colour);
+    border-radius: var(--theme-roundness);
+    box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    padding: unset !important;
+    max-width: 750px;
+    max-height: 475px;
+    margin: auto;
+}
