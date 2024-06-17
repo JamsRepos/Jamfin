@@ -314,7 +314,8 @@ html {
 .paper-icon-button-light.show-focus:focus,
 .emby-button.show-focus:focus,
 .alphaPickerButton-tv:focus,
-#skipIntro .emby-button:hover {
+#skipIntro .emby-button:hover,
+.multiSelectCheckboxOutline {
     border-radius: var(--theme-roundness) !important;
     transform: unset !important;
     -webkit-transform: unset !important;
@@ -338,7 +339,8 @@ html {
     font-weight: bold;
 }
 
-.listItem-border {
+.listItem-border,
+.itemSelectionPanel {
     border: unset;
 }
 
@@ -560,7 +562,8 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .emby-button.show-focus:focus,
 ::selection,
 div[data-role="controlgroup"] a.ui-btn-active,
-.MuiAvatar-root {
+.MuiAvatar-root,
+.selectionCommandsPanel {
     background-color: var(--theme-base-colour) !important;
 }
 
