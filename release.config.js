@@ -56,4 +56,8 @@ const config = {
     ],
 };
 
+if (branch === "main") {
+    config.plugins.splice(-2, 0, "@semantic-release/github");
+}
+
 module.exports = config;
