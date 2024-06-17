@@ -101,7 +101,9 @@ html {
 .guide-date-tab-button.emby-tab-button-active,
 .guide-date-tab-button:focus,
 .MuiTabs-centered .MuiTab-root,
-#skipIntro .emby-button {
+#skipIntro .emby-button,
+.chapterThumbContainer,
+.chapterThumbTextContainer {
     color: var(--theme-text-colour);
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
@@ -677,4 +679,13 @@ progress {
 
 .manualLoginForm .raised.button-submit.block.emby-button {
     margin-bottom: -3px;
+}
+
+.chapterThumbTextContainer {
+    width: fit-content;
+    margin: auto;
+}
+
+.chapterThumbText {
+    width: fit-content;
 }
