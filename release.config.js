@@ -50,7 +50,7 @@ const config = {
         [
             "@semantic-release/exec",
             {
-                successCmd: 'curl -X GET "https://purge.jsdelivr.net/gh/JamsRepos/Jamfin"'
+                successCmd: "node release.purge.js"
             }
         ]
     ],
