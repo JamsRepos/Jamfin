@@ -100,12 +100,13 @@ html {
 .toast.toastVisible,
 .guide-date-tab-button.emby-tab-button-active,
 .guide-date-tab-button:focus,
-.MuiTabs-centered .MuiTab-root {
+.MuiTabs-centered .MuiTab-root,
+#skipIntro .emby-button {
     color: var(--theme-text-colour);
     border-radius: var(--theme-roundness);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     background-color: var(--theme-menu-background-colour);
-    backdrop-filter: blur(var(--theme-blur));
+    backdrop-filter: blur(var(--theme-blur)) !important;
     -webkit-backdrop-filter: blur(var(--theme-blur)) !important;
     -moz-backdrop-filter: blur(var(--theme-blur)) !important;
     -o-backdrop-filter: blur(var(--theme-blur)) !important;
@@ -310,7 +311,8 @@ html {
 .emby-tab-button.show-focus:focus,
 .paper-icon-button-light.show-focus:focus,
 .emby-button.show-focus:focus,
-.alphaPickerButton-tv:focus {
+.alphaPickerButton-tv:focus,
+#skipIntro .emby-button:hover {
     border-radius: var(--theme-roundness) !important;
     transform: unset !important;
     -webkit-transform: unset !important;
