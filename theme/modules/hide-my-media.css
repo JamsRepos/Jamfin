@@ -7,3 +7,7 @@
 #indexPage .section0 .sectionTitle {
     display: none;
 }
+
+#indexPage .section0 .itemsContainer {
+    padding-top: .5em;
+}
