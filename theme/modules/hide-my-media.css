@@ -8,6 +8,10 @@
     display: none;
 }
 
-#indexPage .section0 .itemsContainer {
-    padding-top: .5em;
+#indexPage .section0 {
+    padding-top: 1em;
+}
+
+#indexPage .verticalSection.section0 {
+    padding-top: 3em;
 }
