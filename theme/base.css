@@ -71,6 +71,10 @@ html {
     margin: 0 .29em;
 }
 
+.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 8.5em !important;
+}
+
 .paper-icon-button-light > div {
     width: 25px;
     height: 25px;
