@@ -7,3 +7,11 @@
 #indexPage .section0 .sectionTitle {
     display: none;
 }
+
+#indexPage .section0 {
+    padding-top: 1em;
+}
+
+#indexPage .verticalSection.section0 {
+    padding-top: 3em;
+}

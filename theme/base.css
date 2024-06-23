@@ -263,6 +263,10 @@ html {
 
 /* Main Cards */
 
+.section0 .sectionTitle {
+    padding-top: 1em !important;
+}
+
 .layout-desktop .section0 .emby-scrollbuttons,
 .layout-desktop .section1 .emby-scrollbuttons {
     padding-top: unset;
