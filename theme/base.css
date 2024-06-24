@@ -644,7 +644,7 @@ progress {
     background-color: var(--theme-progress-bar-colour) !important;
 }
 
-/* These need to remain seperare for browser compatibility */
+/* These need to remain separate for browser compatibility */
 progress::-moz-progress-bar {
     background-color: var(--theme-progress-bar-colour);
 }

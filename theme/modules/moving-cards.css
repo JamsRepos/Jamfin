@@ -6,4 +6,8 @@
 
 .cardBox:hover {
     transform: translateY(-2.5px);
+    -webkit-transform: translateY(-2.5px);
+    -moz-transform: translateY(-2.5px);
+    -ms-transform: translateY(-2.5px);
+    -o-transform: translateY(-2.5px);
 }

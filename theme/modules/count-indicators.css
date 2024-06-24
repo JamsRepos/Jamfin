@@ -8,10 +8,17 @@
 .fullSyncIndicator,
 .mediaSourceIndicator,
 .playedIndicator {
-    background: linear-gradient(to bottom right, rgba(170, 92, 195, 0.5), rgba(0, 164, 220, 0.5));
-    backdrop-filter: blur(50px);
+    background: -webkit-linear-gradient(top right, #aa5cc3, #00a4dc);
+    background: -moz-linear-gradient(top right, #aa5cc3, #00a4dc);
+    background: -o-linear-gradient(top right, #aa5cc3, #00a4dc);
+    background: -ms-linear-gradient(top right, #aa5cc3, #00a4dc);
+    background: linear-gradient(to bottom right, #aa5cc3, #00a4dc);
 }
 
 .playedIndicator {
-    background: linear-gradient(to bottom right, rgba(74, 150, 76, 0.5), rgba(32, 139, 35, 0.5));
+    background: -webkit-linear-gradient(top right, #4a964d, #208b23);
+    background: -moz-linear-gradient(top right, #4a964d, #208b23);
+    background: -o-linear-gradient(top right, #4a964d, #208b23);
+    background: -ms-linear-gradient(top right, #4a964d, #208b23);
+    background: linear-gradient(to bottom right, #4a964d, #208b23);
 }

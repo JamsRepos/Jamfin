@@ -22,16 +22,24 @@
     margin: 0 auto;
     height: var(--floating-progress-height);
     border-radius: var(--floating-progress-roundness) !important;
+    -webkit-border-radius: var(--floating-progress-roundness) !important;
+    -moz-border-radius: var(--floating-progress-roundness) !important;
 }
 
 .itemProgressBar {
     height: var(--floating-progress-height);
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    -webkit-box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    -moz-box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
 }
 
 .playbackProgress > div,
 .backgroundProgress > div,
 .transcodingProgress > div {
     box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    -webkit-box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
+    -moz-box-shadow: inset 0 1px var(--theme-menu-shadow-colour);
     border-radius: var(--floating-progress-roundness);
+    -webkit-border-radius: var(--floating-progress-roundness);
+    -moz-border-radius: var(--floating-progress-roundness);
 }
