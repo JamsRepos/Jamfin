@@ -1,0 +1,24 @@
+/*
+    This module will allow you to make the sidebar static, meaning it will not scroll with the rest of the page.
+    This is a simple and effective way to make your Jellyfin instance look more modern.
+    This can be used as a standalone module.
+*/
+
+.layout-desktop .mainDrawer,
+.MuiDrawer-paperAnchorLeft {
+    left: 0 !important;
+    top: 0;
+    width: 250px !important;
+    background-color: var(--theme-sidebar-background-colour) !important;
+    z-index: 100;
+}
+
+.layout-desktop .mainDrawerButton,
+.layout-desktop .headerHomeButton {
+    display: none;
+}
+
+.layout-desktop .libraryPage:not(#editItemMetadataPage) {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
