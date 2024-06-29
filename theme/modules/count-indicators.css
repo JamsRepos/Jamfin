@@ -4,21 +4,23 @@
     This can be used as a standalone module.
 */
 
+:root {
+    --show-count-indicators: flex; /* none to hide */
+    --count-indicator-colour: rgba(200, 200, 200, 0.75);
+    --played-indicator-colour: rgba(32, 139, 36, 0.75);
+}
+
+.countIndicator {
+    display: var(--show-count-indicators);
+}
+
 .countIndicator,
 .fullSyncIndicator,
 .mediaSourceIndicator,
 .playedIndicator {
-    background: -webkit-linear-gradient(top right, #aa5cc3, #00a4dc);
-    background: -moz-linear-gradient(top right, #aa5cc3, #00a4dc);
-    background: -o-linear-gradient(top right, #aa5cc3, #00a4dc);
-    background: -ms-linear-gradient(top right, #aa5cc3, #00a4dc);
-    background: linear-gradient(to bottom right, #aa5cc3, #00a4dc);
+    background: var(--count-indicator-colour);
 }
 
 .playedIndicator {
-    background: -webkit-linear-gradient(top right, #4a964d, #208b23);
-    background: -moz-linear-gradient(top right, #4a964d, #208b23);
-    background: -o-linear-gradient(top right, #4a964d, #208b23);
-    background: -ms-linear-gradient(top right, #4a964d, #208b23);
-    background: linear-gradient(to bottom right, #4a964d, #208b23);
+    background: var(--played-indicator-colour);
 }
