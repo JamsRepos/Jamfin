@@ -200,6 +200,12 @@ html {
     }
 }
 
+@media (max-width: 50em) {
+    .homeLibraryButton {
+    width: 100% !important;
+    }
+}
+
 /* Main Drawer */
 
 .layout-desktop,
@@ -377,9 +383,64 @@ progress {
 }
 
 .layout-desktop .detailPagePrimaryContent {
-    padding-top: 75px;
+    padding-top: 135px;
     padding-left: 300px;
     min-height: 325px;
+}
+
+.layout-desktop .mainDetailButtons {
+    padding-top: 350px;
+    padding-left: 300px;
+    left: 70px;
+    position: absolute;
+}
+
+.layout-mobile .mainDetailButtons {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+}
+
+.mainDetailButtons .detailButton {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 50px;
+    position: relative;
+}
+
+.btnPlay .detailButton-content:before {
+    content: "Play";
+}
+
+.btnPlayTrailer .detailButton-content:before {
+    content: "Trailer";
+}
+
+.btnPlaystate .detailButton-content:before {
+    content: "Watched";
+}
+
+.btnUserRating .detailButton-content:before {
+    content: "Favourite";
+}
+
+.btnMoreCommands .detailButton-content:before {
+    content: "Options";
+}
+
+.detailButton-content:before {
+    position: relative;
+    margin-left: 30px;
+}
+
+.detailButton-icon:before {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.mainDetailButtons .material-icons {
+    height: unset;
 }
 
 .layout-desktop .detailPagePrimaryContainer,
