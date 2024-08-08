@@ -411,8 +411,32 @@ progress {
     content: "Play";
 }
 
+.btnReplay .detailButton-content:before {
+    content: "Replay";
+}
+
+.btnDownload .detailButton-content:before {
+    content: "Download";
+}
+
 .btnPlayTrailer .detailButton-content:before {
     content: "Trailer";
+}
+
+.btnInstantMix .detailButton-content:before {
+    content: "Instant Mix";
+}
+
+.btnShuffle .detailButton-content:before {
+    content: "Shuffle";
+}
+
+.btnCancelSeriesTimer .detailButton-content:before {
+    content: "Cancel Programme";
+}
+
+.btnCancelTimer .detailButton-content:before {
+    content: "Stop Recording";
 }
 
 .btnPlaystate .detailButton-content:before {
@@ -421,6 +445,10 @@ progress {
 
 .btnUserRating .detailButton-content:before {
     content: "Favourite";
+}
+
+.btnSplitVersions .detailButton-content:before {
+    content: "Split Versions";
 }
 
 .btnMoreCommands .detailButton-content:before {
