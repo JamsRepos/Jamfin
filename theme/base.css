@@ -389,8 +389,8 @@ progress {
 }
 
 .layout-desktop .mainDetailButtons {
-    padding-top: 350px;
-    padding-left: 300px;
+    margin-top: 375px;
+    margin-left: 300px;
     position: absolute;
 }
 
