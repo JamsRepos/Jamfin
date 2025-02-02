@@ -5,6 +5,6 @@
 */
 
 #indexPage .section0 .itemsContainer.padded-left.padded-right {
-    justify-content: center;
-    padding-top: 15px;
+    justify-content: center !important;
+    padding-top: 15px !important;
 }
