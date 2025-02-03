@@ -22,3 +22,8 @@
     margin-left: 250px;
     width: calc(100% - 250px);
 }
+
+.layout-desktop .hide-scroll .mainDrawer,
+.layout-desktop .hideMainDrawer .mainDrawer {
+    display: none;
+}

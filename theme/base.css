@@ -217,13 +217,8 @@ html {
     padding-top: 1.2em;
 }
 
-.layout-desktop .hide-scroll .mainDrawer,
-.layout-desktop .hideMainDrawer .mainDrawer {
-    left: -250px !important;
-}
-
 .layout-desktop .mainDrawer-scrollContainer {
-    margin-top: 100px;
+    margin-top: 25px;
 }
 
 .navMenuOption,
