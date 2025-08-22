@@ -18,10 +18,14 @@
     display: none;
 }
 
-.layout-desktop .libraryPage:not(#editItemMetadataPage),
+.layout-desktop .libraryPage:not(#editItemMetadataPage) {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
 .layout-desktop #slides-container {
-    margin-left: 300px;
-    width: calc(100% - 350px);
+    margin-left: 320px;
+    width: calc(100% - 385px);
 }
 
 .layout-desktop .hide-scroll .mainDrawer,
