@@ -20,8 +20,8 @@
 
 .layout-desktop .libraryPage:not(#editItemMetadataPage),
 .layout-desktop #slides-container {
-    margin-left: 250px;
-    width: calc(100% - 250px);
+    margin-left: 300px;
+    width: calc(100% - 350px);
 }
 
 .layout-desktop .hide-scroll .mainDrawer,
