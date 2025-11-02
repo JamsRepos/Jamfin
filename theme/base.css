@@ -18,6 +18,8 @@
     --theme-progress-bar-colour: #cfcfcf;
     --theme-progress-bar-background-colour: #2c2c2c;
     --theme-progress-bar-transcoding-colour: #eb7e25;
+    --theme-chapter-marker-colour: #dbdbdb;
+    --theme-chapter-marker-watched-colour: #4a4a4a;
 
     /* General Appearance */
     --theme-roundness: .75rem;
@@ -679,8 +681,36 @@ div[data-role="controlgroup"] a.ui-btn-active,
     height: 10px;
 }
 
+/* Chapter Markers */
 .sliderMarkerContainer {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.sliderMarker {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 10px;
+    background-color: var(--theme-chapter-marker-colour);
+    opacity: 0.6;
+    border-radius: 1px;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: opacity 0.2s ease, width 0.2s ease, background-color 0.2s ease;
+}
+
+.sliderMarker.unwatched {
+    background-color: var(--theme-chapter-marker-colour);
+}
+
+.sliderMarker.watched {
+    background-color: var(--theme-chapter-marker-watched-colour);
 }
 
 .mdl-slider-background-upper {
