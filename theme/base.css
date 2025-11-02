@@ -372,8 +372,9 @@ progress {
 .layout-desktop .detailImageContainer .card {
     width: 250px;
     max-width: unset;
-    top: 8.5em;
-    padding-top: 5px;
+    top: 1.5em;
+    left: 0;
+    /* padding-top: 5px; */
 }
 
 .layout-desktop .detailPagePrimaryContent {
@@ -383,8 +384,8 @@ progress {
 }
 
 .layout-desktop .mainDetailButtons {
-    margin-top: 375px;
-    margin-left: 300px;
+    margin-top: 350px;
+    margin-left: 292px;
     position: absolute;
 }
 
@@ -471,11 +472,24 @@ progress {
 
 .detailRibbon {
     background: unset;
+    padding-left: 0 !important;
 }
 
 .layout-desktop .infoWrapper {
     padding-top: 226px;
     padding-left: 300px;
+}
+
+.itemBackdrop::before {
+    content: '';
+    position: absolute;
+    top: 0;        /* cover the full element */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
+    pointer-events: none; /* ensures it's non-interactive */
+    z-index: 1; /* sits on top of the image */
 }
 
 .layout-mobile .itemBackdrop {
@@ -490,6 +504,7 @@ progress {
     -moz-filter: unset;
     -o-filter: unset;
     -ms-filter: unset;
+    padding-left: 2em;
 }
 
 .layout-desktop .detailLogo {
@@ -525,27 +540,6 @@ progress {
     background: -o-linear-gradient(180deg, transparent, var(--theme-background-colour));
     background: -ms-linear-gradient(180deg, transparent, var(--theme-background-colour));
     background: linear-gradient(180deg, transparent, var(--theme-background-colour));
-}
-
-.noBackdropTransparency .detailPageSecondaryContainer,
-.layout-mobile .detailPageWrapperContainer {
-    position: relative;
-}
-
-.noBackdropTransparency .detailPageSecondaryContainer::before,
-.layout-mobile .detailPageWrapperContainer::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: -webkit-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
-    background: -moz-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
-    background: -ms-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
-    background: -o-linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
-    background: linear-gradient(180deg, transparent 5%, var(--theme-background-colour));
-    pointer-events: none;
 }
 
 .itemsContainer-tv {
