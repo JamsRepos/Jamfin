@@ -376,7 +376,11 @@ progress {
     max-width: unset;
     top: 1.5em;
     left: 0;
-    /* padding-top: 5px; */
+}
+
+/* Backwards Compatibility for versions before 10.11.0 */
+.layout-desktop .infoWrapper .detailImageContainer .card {
+    padding-top: 8.5em;
 }
 
 .layout-desktop .detailPagePrimaryContent {
